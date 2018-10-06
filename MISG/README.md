@@ -17,17 +17,20 @@ I've formulated and tested the following procedure with the aim of getting a com
 **1.** Copy the SIPolicy.p7b file for the policy you want to test into your C:/Windows/System32/CodeIntegrity directory. (If you use a different drive letter for your OS root, obviously substitute that.)
 
 **2.** Open an elevated command or Powershell prompt and run the following commands:
+
       sc.exe start appidsvc
+      
       sc.exe config appidsvc start= auto
+      
       appidtel.exe start
       
-Respectively, these make sure the Application Identity Service--which is needed to interface with the MISG reputation service-- is started on the machine, make sure that service starts at boot from now on, and immediately start the appidtel executable. This isn't Microsoft's procedure for enabling MISG functionality, but I've had some issues with Microsoft's simpler version--basically, just run appidtel.exe--not working properly on Pro and Home.
+Respectively, these commands make sure the Application Identity Service--which is needed to interface with the MISG reputation service-- is started on the machine, make sure that that service starts at boot from now on, and immediately start the appidtel executable. This isn't Microsoft's procedure for enabling MISG functionality, but I've had some issues with Microsoft's simpler version--basically, just run appidtel.exe--not working properly on Pro and Home.
 
 **3.** Reboot. (Despite what MS says, in my experience a reboot is often necessary for WDAC + MISG to work properly even if you have the "Enabled:Update Policy No Reboot" option in place.)  
 
-**4.** If you're in audit mode, use your device normally and, at some point, begin to look for issues with legitimate software failing in your CodeIntegrity log. If you're in enforced mode,  see if it boots (Note: I've selected options for these policies to try to minimize boot-stopping issues, and I think most PCs should start correctly, if sometimes a tad slowly, rather than failing to boot if there are issues. But no guarantees.), and then ascertain whether your PC is properly accessing the MISG service and approving known good non-Windows applications.  The easiest way to do that is to just open something that absolutely should be common enough to be approved--like Google Chrome--and see whether WDAC blocks it.
+**4.** If you're in audit mode, use your device normally and, at some point, begin to look for issues with legitimate software getting flagged as "unauthorized" in your CodeIntegrity log. If you're in enforced mode, see if your machine boots (Note: I've selected options for these policies to try to minimize boot-stopping issues, and I think most PCs should start correctly, if sometimes a tad slowly, rather than failing to boot if there are issues. But no guarantees.), and then ascertain whether your PC is properly accessing the MISG service and approving known-good non-Windows applications.  The easiest way to do that is to just open something you already have installed that absolutely should be common enough to be approved--like Google Chrome--and see whether WDAC blocks it.
 
-**5.** Determine how suitable WDAC + MISG is for your needs by testing applications and drivers you need to have in your environment. Keep in mind that expecting perfection--meaning you'll need to expend no effort whatsoever to tailor a baseline WDAC policy to your needs thanks to MISG auto-authorization of all desired programs--will very often be unrealistic. Also consider how much you care about the inevitable increase in exposure to "living off the land"/LoLbin bypass techniques that relying on something like MISG authorization brings. (The counter-consideration, of course, is that use of MISG may make deploying application control feasible for you where it otherwise wouldn't be.)  
+**5.** Determine how suitable WDAC + MISG is for your needs by testing applications and drivers you need to have in your environment. Keep in mind that expecting perfection--meaning you would need to expend no effort whatsoever to tailor a baseline WDAC policy to your needs thanks to MISG auto-authorization of all desired programs--will very often be unrealistic. Also consider how much you care about the inherent increase in exposure to "living off the land"/LoLbin bypass techniques that relying on something like MISG authorization brings vs. only using specific rules. (The counter-consideration, of course, is that use of MISG may make deploying application control feasible for you where it otherwise wouldn't be.)  
 ____________________________________________________________________________
 **Troubleshooting**
 
