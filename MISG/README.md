@@ -21,6 +21,7 @@ In my own opinion, a reasonable course if you’re interested in the capabilitie
 
 ______________________________________________________________________________
 **Fair Warning**
+
 Do not initially deploy "enforced" versions of even the unsigned sample/starter policies here to machines that you would be really disturbed to see not boot properly, be unable to run critical applications properly, etc. Even if you do first deploy the audit version of the policy on a machine and nothing vital shows up in the Windows CodeIntegrity event log as being problematic. Simply put, the CodeIntegrity log does not catch every issue that may render a machine unbootable. Moreover, complex applications can have a ton of components that can trip CodeIntegrity rules if they aren’t all registered and authorized correctly by MISG. **Test the enforced policies here on machines you use for TESTING things.** This is not one of those occasions where "Screw it. Let's just push this straight to production." is taking risks you probably want to take, at least if "production" is really important.
   
 ( If you do have boot issues, Matt Graeber has written a post that contains info that has been extremely helpful, at least for me, in troubleshooting them: https://posts.specterops.io/adventures-in-extremely-strict-device-guard-policy-configuration-part-1-device-drivers-fd1a281b35a8 )  
