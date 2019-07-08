@@ -19,13 +19,13 @@
       <Option>Enabled:Allow Supplemental Policies</Option>
     </Rule>
     <Rule>
-      <Option>Enabled:Intelligent Security Graph Authorization</Option>
-    </Rule>
-    <Rule>
       <Option>Enabled:Boot Audit On Failure</Option>
     </Rule>
     <Rule>
-      <Option>Disabled:Runtime FilePath Rule Protection</Option>
+      <Option>Disabled:Script Enforcement</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Intelligent Security Graph Authorization</Option>
     </Rule>
   </Rules>
   <!--EKUS-->
