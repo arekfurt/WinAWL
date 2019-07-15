@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy" PolicyType="Base Policy">
+  <VersionEx>10.0.0.0</VersionEx>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Required:Enforce Store Applications</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Allow Supplemental Policies</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Boot Audit On Failure</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Audit Mode</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Update Policy No Reboot</Option>
+    </Rule>
+  </Rules>
+  <!--EKUS-->
+  <EKUs>
+    <EKU ID="ID_EKU_WINDOWS" Value="010A2B0601040182370A0306" FriendlyName="" />
+    <EKU ID="ID_EKU_ELAM" Value="010A2B0601040182373D0401" FriendlyName="" />
+    <EKU ID="ID_EKU_HAL_EXT" Value="010a2b0601040182373d0501" FriendlyName="" />
+    <EKU ID="ID_EKU_WHQL" Value="010A2B0601040182370A0305" FriendlyName="" />
+    <EKU ID="ID_EKU_STORE" Value="010a2b0601040182374c0301" FriendlyName="Windows Store EKU - 1.3.6.1.4.1.311.76.3.1 Windows Store" />
+    <EKU ID="ID_EKU_RT_EXT" Value="010a2b0601040182370a0315" FriendlyName="" />
+    <EKU ID="ID_EKU_DCODEGEN" Value="010A2B0601040182374C0501" FriendlyName="Dynamic Code Generation EKU - 1.3.6.1.4.1.311.76.5.1" />
+    <EKU ID="ID_EKU_AM" Value="010a2b0601040182374c0b01" FriendlyName="AntiMalware EKU -1.3.6.1.4.1.311.76.11.1 " />
+  </EKUs>
+  <!--File Rules-->
+  <FileRules>
+    <Allow ID="ID_ALLOW_A_7_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\msil_microsoft.updateservices.baseapi_31bf3856ad364e35_10.0.18362.145_none_c1a0649f68e886aa\microsoft.updateservices.baseapi.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\msil_microsoft.updateservices.baseapi_31bf3856ad364e35_10.0.18362.145_none_c1a0649f68e886aa\microsoft.updateservices.baseapi.dll" />
+    <Allow ID="ID_ALLOW_A_3D_0_0" FriendlyName="C:\Windows\assembly\temp\CSBPRYE2AD\System.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\temp\CSBPRYE2AD\System.ni.dll" />
+    <Allow ID="ID_ALLOW_A_3F_0_0" FriendlyName="C:\Windows\assembly\temp\3GJK7EV8MZ\System.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\temp\3GJK7EV8MZ\System.ni.dll" />
+    <Allow ID="ID_ALLOW_A_41_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\WindowsBase\3ef48158566b2233eed12c8e1ae091ee\WindowsBase.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\WindowsBase\3ef48158566b2233eed12c8e1ae091ee\WindowsBase.ni.dll" />
+    <Allow ID="ID_ALLOW_A_43_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\TaskScheduler\9de160d46b48a0fe295ce959eeac080d\TaskScheduler.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\TaskScheduler\9de160d46b48a0fe295ce959eeac080d\TaskScheduler.ni.dll" />
+    <Allow ID="ID_ALLOW_A_45_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml.Linq\b63cf5e21f052ba4a8692063e34f21ad\System.Xml.Linq.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml.Linq\b63cf5e21f052ba4a8692063e34f21ad\System.Xml.Linq.ni.dll" />
+    <Allow ID="ID_ALLOW_A_47_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml\6203adf48ad0513e4b0c675b619a12b6\System.Xml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml\6203adf48ad0513e4b0c675b619a12b6\System.Xml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_49_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xaml\b60e24273f5a0194ae64ac093603330b\System.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xaml\b60e24273f5a0194ae64ac093603330b\System.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_4B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Windows.Forms\9c75c3614ac4c3be2bc87c2e36147dc8\System.Windows.Forms.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Windows.Forms\9c75c3614ac4c3be2bc87c2e36147dc8\System.Windows.Forms.ni.dll" />
+    <Allow ID="ID_ALLOW_A_4D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web.Services\a34c66c546de4452012c8176b0e16394\System.Web.Services.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web.Services\a34c66c546de4452012c8176b0e16394\System.Web.Services.ni.dll" />
+    <Allow ID="ID_ALLOW_A_4F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web\cd8858efdef7860aa66c9803c651cc34\System.Web.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web\cd8858efdef7860aa66c9803c651cc34\System.Web.ni.dll" />
+    <Allow ID="ID_ALLOW_A_51_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Transactions\bff93320eca4af3b82b1fa58837ddfcb\System.Transactions.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Transactions\bff93320eca4af3b82b1fa58837ddfcb\System.Transactions.ni.dll" />
+    <Allow ID="ID_ALLOW_A_53_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.ServiceModel\34d45c426efd2636a4ed301a6f16f213\System.ServiceModel.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.ServiceModel\34d45c426efd2636a4ed301a6f16f213\System.ServiceModel.ni.dll" />
+    <Allow ID="ID_ALLOW_A_55_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Serv759bfb78#\be48e5966328a1b3e1e637fefcfc3b5d\System.ServiceProcess.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Serv759bfb78#\be48e5966328a1b3e1e637fefcfc3b5d\System.ServiceProcess.ni.dll" />
+    <Allow ID="ID_ALLOW_A_57_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runteb92aa12#\64c3d1e4e09654841a829b4a97889c50\System.Runtime.Serialization.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runteb92aa12#\64c3d1e4e09654841a829b4a97889c50\System.Runtime.Serialization.ni.dll" />
+    <Allow ID="ID_ALLOW_A_59_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runtc259d85b#\18e27a0eab45046f90fb3682d25fa89f\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runtc259d85b#\18e27a0eab45046f90fb3682d25fa89f\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_5B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runt73a1fc9d#\d1f93c82f0086fd3116b372c07bd5ab9\System.Runtime.Remoting.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runt73a1fc9d#\d1f93c82f0086fd3116b372c07bd5ab9\System.Runtime.Remoting.ni.dll" />
+    <Allow ID="ID_ALLOW_A_5D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Numerics\5cfa824ef55c5e7dd5987ed44d152885\System.Numerics.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Numerics\5cfa824ef55c5e7dd5987ed44d152885\System.Numerics.ni.dll" />
+    <Allow ID="ID_ALLOW_A_5F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Net.Http\04c08137d266118f556af5dd9e20e059\System.Net.Http.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Net.Http\04c08137d266118f556af5dd9e20e059\System.Net.Http.ni.dll" />
+    <Allow ID="ID_ALLOW_A_61_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Management\96e6b0126238544e907ec19d1be282a0\System.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Management\96e6b0126238544e907ec19d1be282a0\System.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_63_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\f8ab79b6bf1b5e1fb7787cf4909c4ffb\System.Management.Automation.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\f8ab79b6bf1b5e1fb7787cf4909c4ffb\System.Management.Automation.ni.dll" />
+    <Allow ID="ID_ALLOW_A_65_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\5f95b93dbe1d38fe8cbbcb8e65a0bcab\System.Management.Automation.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\5f95b93dbe1d38fe8cbbcb8e65a0bcab\System.Management.Automation.ni.dll" />
+    <Allow ID="ID_ALLOW_A_67_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Drawing\14eeb7566456f10967233ee0d1cb7987\System.Drawing.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Drawing\14eeb7566456f10967233ee0d1cb7987\System.Drawing.ni.dll" />
+    <Allow ID="ID_ALLOW_A_69_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Dired13b18a9#\e5a074f151a24c92f7e88e410d879bf1\System.DirectoryServices.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Dired13b18a9#\e5a074f151a24c92f7e88e410d879bf1\System.DirectoryServices.ni.dll" />
+    <Allow ID="ID_ALLOW_A_6B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Data\c9eaf576aa377b69c1d5a6a6ad427a57\System.Data.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Data\c9eaf576aa377b69c1d5a6a6ad427a57\System.Data.ni.dll" />
+    <Allow ID="ID_ALLOW_A_6D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Core\8981339ee81e4b6617a96f67163f6ded\System.Core.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Core\8981339ee81e4b6617a96f67163f6ded\System.Core.ni.dll" />
+    <Allow ID="ID_ALLOW_A_6F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Configuration\201259c764eff75b758b512aca0ecf0e\System.Configuration.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Configuration\201259c764eff75b758b512aca0ecf0e\System.Configuration.ni.dll" />
+    <Allow ID="ID_ALLOW_A_71_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Confe64a9051#\1a25d3dca37ad51c86900ecc290841b8\System.Configuration.Install.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Confe64a9051#\1a25d3dca37ad51c86900ecc290841b8\System.Configuration.Install.ni.dll" />
+    <Allow ID="ID_ALLOW_A_73_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\SrpUxSnapIn\82541a6abcc76c28f12c834b09cc7948\SrpUxSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\SrpUxSnapIn\82541a6abcc76c28f12c834b09cc7948\SrpUxSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_75_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\SecurityAudf6921413#\38c8a9bd0f07df75e9760962775d2644\SecurityAuditPoliciesSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\SecurityAudf6921413#\38c8a9bd0f07df75e9760962775d2644\SecurityAuditPoliciesSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_77_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\PresentationCore\fe02c072323200b743baf146c7a8886f\PresentationCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\PresentationCore\fe02c072323200b743baf146c7a8886f\PresentationCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_79_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatioaec034ca#\c18da48b8e7ad6906110e5523b1c3973\PresentationFramework.Aero2.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatioaec034ca#\c18da48b8e7ad6906110e5523b1c3973\PresentationFramework.Aero2.ni.dll" />
+    <Allow ID="ID_ALLOW_A_7B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatio5ae0f00f#\705e13c7b1d51f8e41a154fc81f62caf\PresentationFramework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatio5ae0f00f#\705e13c7b1d51f8e41a154fc81f62caf\PresentationFramework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_7D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\napinit\1253c1b1e9c7445ecc7f8e349a388f53\napinit.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\napinit\1253c1b1e9c7445ecc7f8e349a388f53\napinit.ni.dll" />
+    <Allow ID="ID_ALLOW_A_7F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\napcrypt\179f15b31f9990bb4d065e6a4b540de6\napcrypt.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\napcrypt\179f15b31f9990bb4d065e6a4b540de6\napcrypt.ni.dll" />
+    <Allow ID="ID_ALLOW_A_81_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCFxCommon\00177d2fd3be3e0c7c9126315050e01d\MMCFxCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCFxCommon\00177d2fd3be3e0c7c9126315050e01d\MMCFxCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_83_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCEx\6190efad06ae751917c7908a71d70cba\MMCEx.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCEx\6190efad06ae751917c7908a71d70cba\MMCEx.ni.dll" />
+    <Allow ID="ID_ALLOW_A_85_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\MIGUIControls\606926d25e47ed711163e2592db0f108\MIGUIControls.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\MIGUIControls\606926d25e47ed711163e2592db0f108\MIGUIControls.ni.dll" />
+    <Allow ID="ID_ALLOW_A_87_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wed3937f9#\fb396b4fd02a524c802bfcce2da10dc2\Microsoft.Windows.Diagnosis.SDCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wed3937f9#\fb396b4fd02a524c802bfcce2da10dc2\Microsoft.Windows.Diagnosis.SDCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_89_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We9f24001#\5f21459b8c54a3371c5a81d939371fe9\Microsoft.WSMan.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We9f24001#\5f21459b8c54a3371c5a81d939371fe9\Microsoft.WSMan.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_8B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We0722664#\eff3933fa72dfcd777da25e7478b7289\Microsoft.WSMan.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We0722664#\eff3933fa72dfcd777da25e7478b7289\Microsoft.WSMan.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_8D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd75d181a#\e56f16c58415677b629da72e90ada551\Microsoft.Windows.Diagnosis.SDEngine.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd75d181a#\e56f16c58415677b629da72e90ada551\Microsoft.Windows.Diagnosis.SDEngine.ni.dll" />
+    <Allow ID="ID_ALLOW_A_8F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd518ee0d#\1f47a9ad0023080710d701893feb5b89\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd518ee0d#\1f47a9ad0023080710d701893feb5b89\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll" />
+    <Allow ID="ID_ALLOW_A_91_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wcffedcb4#\2711934d8f37d47be1065c273ebfb76d\Microsoft.WindowsSearch.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wcffedcb4#\2711934d8f37d47be1065c273ebfb76d\Microsoft.WindowsSearch.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_93_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wad78daf4#\d52b75278b474c1fe1543af33069c1aa\Microsoft.Windows.Diagnosis.SDHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wad78daf4#\d52b75278b474c1fe1543af33069c1aa\Microsoft.Windows.Diagnosis.SDHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_95_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W79a81d80#\e3470a51df58249e98e19a230904ff55\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W79a81d80#\e3470a51df58249e98e19a230904ff55\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll" />
+    <Allow ID="ID_ALLOW_A_97_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W708fc392#\df085299fe8c766cd8e2dfb2907dc56b\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W708fc392#\df085299fe8c766cd8e2dfb2907dc56b\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll" />
+    <Allow ID="ID_ALLOW_A_99_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W69ef49d2#\2a58b370715e983fed230a2760b54e13\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W69ef49d2#\2a58b370715e983fed230a2760b54e13\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll" />
+    <Allow ID="ID_ALLOW_A_9B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W3cdb5602#\d11b12a4591fba049c851381cab74907\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W3cdb5602#\d11b12a4591fba049c851381cab74907\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll" />
+    <Allow ID="ID_ALLOW_A_9D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2ded559f#\54992fa95e2b4bb8498f22b2585e4496\Microsoft.WindowsAuthenticationProtocols.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2ded559f#\54992fa95e2b4bb8498f22b2585e4496\Microsoft.WindowsAuthenticationProtocols.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_9F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2d29a719#\d9aeb3a1b00be8c84a309902698fc53f\Microsoft.Windows.DSC.CoreConfProviders.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2d29a719#\d9aeb3a1b00be8c84a309902698fc53f\Microsoft.Windows.DSC.CoreConfProviders.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A1_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W193497eb#\a503411cabdb82ba5c69073e0af9303a\Microsoft.WSMan.Runtime.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W193497eb#\a503411cabdb82ba5c69073e0af9303a\Microsoft.WSMan.Runtime.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A3_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W0bb5dac4#\8323816b255291a301d71eadfd83493a\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W0bb5dac4#\8323816b255291a301d71eadfd83493a\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A5_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.V9921e851#\c3c51e8359cbb7d111227135cf75e2ab\Microsoft.VisualBasic.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.V9921e851#\c3c51e8359cbb7d111227135cf75e2ab\Microsoft.VisualBasic.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A7_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.T9d753d8c#\f273509712b68431855aa4b70247cf97\Microsoft.Tpm.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.T9d753d8c#\f273509712b68431855aa4b70247cf97\Microsoft.Tpm.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A9_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sb6a1f1bc#\909fa143b4b68411a7af29f9d7b49406\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sb6a1f1bc#\909fa143b4b68411a7af29f9d7b49406\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll" />
+    <Allow ID="ID_ALLOW_A_AB_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sa56e3556#\ec20325d4cee54b8a84b55763d334add\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sa56e3556#\ec20325d4cee54b8a84b55763d334add\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_AD_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S88747207#\63920ade0e6f84423e1cb9f4ee6ed2cc\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S88747207#\63920ade0e6f84423e1cb9f4ee6ed2cc\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_AF_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S54faafb0#\feca75e0b45c6638b0935dc858f9e6bc\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S54faafb0#\feca75e0b45c6638b0935dc858f9e6bc\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B1_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S356e1ba0#\291f336b19214ced7eadff27803f424f\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S356e1ba0#\291f336b19214ced7eadff27803f424f\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B3_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S1bc92e04#\ed1b93699d859bc41ddfb3a5ae6c06fa\Microsoft.SecureBoot.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S1bc92e04#\ed1b93699d859bc41ddfb3a5ae6c06fa\Microsoft.SecureBoot.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B5_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S0f8e494c#\cfc5a4487849531d77e73f733a94ce23\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S0f8e494c#\cfc5a4487849531d77e73f733a94ce23\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B7_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pefb7a36b#\2aa6a5fe8f74724f51dfcef9f6b607a2\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pefb7a36b#\2aa6a5fe8f74724f51dfcef9f6b607a2\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B9_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pd3efef62#\c2628bd4c7cad2981a7205a39b1b1d45\Microsoft.PowerShell.ISECommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pd3efef62#\c2628bd4c7cad2981a7205a39b1b1d45\Microsoft.PowerShell.ISECommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_BB_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pcd26229b#\f9267b29259f005340ec42589a31ff41\Microsoft.PowerShell.GraphicalHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pcd26229b#\f9267b29259f005340ec42589a31ff41\Microsoft.PowerShell.GraphicalHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_BD_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\682045938de3c7f59241eb7ea9507118\Microsoft.PowerShell.ConsoleHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\682045938de3c7f59241eb7ea9507118\Microsoft.PowerShell.ConsoleHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_BF_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\347a3db4b3c5436361c6ac09a8fc099c\Microsoft.PowerShell.ConsoleHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\347a3db4b3c5436361c6ac09a8fc099c\Microsoft.PowerShell.ConsoleHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C1_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pae3498d9#\0da916bfb4d884fab53dfe15cffb5e3b\Microsoft.PowerShell.Commands.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pae3498d9#\0da916bfb4d884fab53dfe15cffb5e3b\Microsoft.PowerShell.Commands.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C3_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pad0e0718#\04968cdba4496155b6e346ce3303df2e\Microsoft.PowerShell.Cmdletization.OData.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pad0e0718#\04968cdba4496155b6e346ce3303df2e\Microsoft.PowerShell.Cmdletization.OData.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C5_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P9de5a786#\dc150f688c4a61a773528049dce18e5f\Microsoft.PowerShell.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P9de5a786#\dc150f688c4a61a773528049dce18e5f\Microsoft.PowerShell.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C7_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f9a5e83#\bcac5cc57f513477a9f0fe4ddbeffbf9\Microsoft.PowerShell.Security.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f9a5e83#\bcac5cc57f513477a9f0fe4ddbeffbf9\Microsoft.PowerShell.Security.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C9_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f792626#\e7b71c0ff8195c964ffb56fe8f23c3b0\Microsoft.PowerShell.Security.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f792626#\e7b71c0ff8195c964ffb56fe8f23c3b0\Microsoft.PowerShell.Security.ni.dll" />
+    <Allow ID="ID_ALLOW_A_CB_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P655586bb#\a57fff7789bc55e9653646b66304877b\Microsoft.PowerShell.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P655586bb#\a57fff7789bc55e9653646b66304877b\Microsoft.PowerShell.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_CD_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P521220ea#\ff57feb71e14562e7f6684ebe9582959\Microsoft.PowerShell.Commands.Utility.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P521220ea#\ff57feb71e14562e7f6684ebe9582959\Microsoft.PowerShell.Commands.Utility.ni.dll" />
+    <Allow ID="ID_ALLOW_A_CF_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P39041136#\459578cb7fdebc47d911df49c4e49ce1\Microsoft.PowerShell.ScheduledJob.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P39041136#\459578cb7fdebc47d911df49c4e49ce1\Microsoft.PowerShell.ScheduledJob.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D1_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P34f388c1#\03df871d5f73080fd6f212c63cccf018\Microsoft.PowerShell.Diagnostics.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P34f388c1#\03df871d5f73080fd6f212c63cccf018\Microsoft.PowerShell.Diagnostics.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D3_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P1706cafe#\8ce1fcf6363676b56ed565e3273ea48f\Microsoft.PowerShell.Commands.Diagnostics.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P1706cafe#\8ce1fcf6363676b56ed565e3273ea48f\Microsoft.PowerShell.Commands.Diagnostics.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D5_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P10d01611#\afb36595fe95c56652374387119af7dc\Microsoft.PowerShell.Editor.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P10d01611#\afb36595fe95c56652374387119af7dc\Microsoft.PowerShell.Editor.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D7_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P0e11b656#\b7133dd51c051bfb710e77bc7dc4dd76\Microsoft.PowerShell.GPowerShell.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P0e11b656#\b7133dd51c051bfb710e77bc7dc4dd76\Microsoft.PowerShell.GPowerShell.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D9_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P08ac43d5#\39abbce217fc5760b53e0acff8d59a77\Microsoft.PowerShell.Utility.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P08ac43d5#\39abbce217fc5760b53e0acff8d59a77\Microsoft.PowerShell.Utility.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_DB_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P047767ce#\bc79eaed5ab5b2470f83066d0a3bacbc\Microsoft.PowerShell.Core.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P047767ce#\bc79eaed5ab5b2470f83066d0a3bacbc\Microsoft.PowerShell.Core.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_DD_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mff1be75b#\107affe73772d5c08823f625bea71d57\Microsoft.ManagementConsole.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mff1be75b#\107affe73772d5c08823f625bea71d57\Microsoft.ManagementConsole.ni.dll" />
+    <Allow ID="ID_ALLOW_A_DF_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf5ac9168#\4f77a7aa3346812e119d4765899c13c1\Microsoft.Management.Infrastructure.CimCmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf5ac9168#\4f77a7aa3346812e119d4765899c13c1\Microsoft.Management.Infrastructure.CimCmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E1_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf49f6405#\dc864d9720c5d1cc536e9af1b4432d30\Microsoft.Management.Infrastructure.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf49f6405#\dc864d9720c5d1cc536e9af1b4432d30\Microsoft.Management.Infrastructure.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E3_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.M870d558a#\1a1a7661fd4c3aeb11d6f25e02e59cb7\Microsoft.Management.Infrastructure.Native.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.M870d558a#\1a1a7661fd4c3aeb11d6f25e02e59cb7\Microsoft.Management.Infrastructure.Native.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E5_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Kd58820a5#\f46daaddb8124daa5a608da2a6c13299\Microsoft.KeyDistributionService.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Kd58820a5#\f46daaddb8124daa5a608da2a6c13299\Microsoft.KeyDistributionService.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E7_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ic1a2041b#\05f35ca3d304130a958006e29b90f822\Microsoft.Isam.Esent.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ic1a2041b#\05f35ca3d304130a958006e29b90f822\Microsoft.Isam.Esent.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E9_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I7676db1a#\40ae8d9372b03589b1ac4bce785166f6\Microsoft.InternationalSettings.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I7676db1a#\40ae8d9372b03589b1ac4bce785166f6\Microsoft.InternationalSettings.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_EB_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I0cd65b90#\1826c66626682557cf30b80aceec03ab\Microsoft.Isam.Esent.Interop.Wsa.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I0cd65b90#\1826c66626682557cf30b80aceec03ab\Microsoft.Isam.Esent.Interop.Wsa.ni.dll" />
+    <Allow ID="ID_ALLOW_A_ED_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ga41585c2#\4923c9226264b75aba715131bb657af1\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ga41585c2#\4923c9226264b75aba715131bb657af1\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll" />
+    <Allow ID="ID_ALLOW_A_EF_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G91a07420#\c123e89a67ab7fb86969cbec20266b1d\Microsoft.GroupPolicy.Reporting.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G91a07420#\c123e89a67ab7fb86969cbec20266b1d\Microsoft.GroupPolicy.Reporting.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F1_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G46fcc235#\72c0d8f431173c8445f83976d1831cfd\Microsoft.GroupPolicy.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G46fcc235#\72c0d8f431173c8445f83976d1831cfd\Microsoft.GroupPolicy.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F3_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.D0ff51f83#\afd6b70ced4876156bdff0d4284870d5\Microsoft.Dtc.PowerShell.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.D0ff51f83#\afd6b70ced4876156bdff0d4284870d5\Microsoft.Dtc.PowerShell.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F5_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.CSharp\c6d8bc821af780baaff15184629e1f94\Microsoft.CSharp.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.CSharp\c6d8bc821af780baaff15184629e1f94\Microsoft.CSharp.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F7_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C99be4d25#\db5732b5380c71da78e129feebc9af34\Microsoft.ConfigCI.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C99be4d25#\db5732b5380c71da78e129feebc9af34\Microsoft.ConfigCI.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F9_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C26a36d2b#\cf40ee785ca819d6be7b321b1f066e5b\Microsoft.CertificateServices.PKIClient.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C26a36d2b#\cf40ee785ca819d6be7b321b1f066e5b\Microsoft.CertificateServices.PKIClient.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_FB_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Abf69f55a#\7695dda87096ea6eaa1804bf9806f6b9\Microsoft.ApplicationId.Framework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Abf69f55a#\7695dda87096ea6eaa1804bf9806f6b9\Microsoft.ApplicationId.Framework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_FD_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.A26c32abb#\23ed37a1f41d288636d7f5f4000d37c2\Microsoft.ApplicationId.RuleWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.A26c32abb#\23ed37a1f41d288636d7f5f4000d37c2\Microsoft.ApplicationId.RuleWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_FF_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\EventViewer\8b21d35750d9f32d4f63a78333cc7d9a\EventViewer.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\EventViewer\8b21d35750d9f32d4f63a78333cc7d9a\EventViewer.ni.dll" />
+    <Allow ID="ID_ALLOW_A_101_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\CustomMarshalers\124a2d805bee83fc6fdcfb77e974e4fe\CustomMarshalers.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\CustomMarshalers\124a2d805bee83fc6fdcfb77e974e4fe\CustomMarshalers.ni.dll" />
+    <Allow ID="ID_ALLOW_A_103_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\AuditPolicy42d3d2cc#\23abe2d58ff2eff034ef0380448e29f8\AuditPolicyGPManagedStubs.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\AuditPolicy42d3d2cc#\23abe2d58ff2eff034ef0380448e29f8\AuditPolicyGPManagedStubs.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_105_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Accessibility\269bf957a3fc69db87b49b0b0c8303fa\Accessibility.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Accessibility\269bf957a3fc69db87b49b0b0c8303fa\Accessibility.ni.dll" />
+    <Allow ID="ID_ALLOW_A_107_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\WindowsBase\0edca6007c5c28f4b080d0b66bdefa05\WindowsBase.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\WindowsBase\0edca6007c5c28f4b080d0b66bdefa05\WindowsBase.ni.dll" />
+    <Allow ID="ID_ALLOW_A_109_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\TaskScheduler\ee6e65b18d7268d5cccbf3159b85d6c8\TaskScheduler.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\TaskScheduler\ee6e65b18d7268d5cccbf3159b85d6c8\TaskScheduler.ni.dll" />
+    <Allow ID="ID_ALLOW_A_10B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml.Linq\988711617a0df397efaaff1618e6c751\System.Xml.Linq.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml.Linq\988711617a0df397efaaff1618e6c751\System.Xml.Linq.ni.dll" />
+    <Allow ID="ID_ALLOW_A_10D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\7898f6e777383930e5e76fc058a9671a\System.Xml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\7898f6e777383930e5e76fc058a9671a\System.Xml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_10F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xaml\0f725eb82624879cdc49cde97f75bc3f\System.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xaml\0f725eb82624879cdc49cde97f75bc3f\System.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_111_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runteb92aa12#\e1f8543ba021d452b8b620b1750e8e13\System.Runtime.Serialization.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runteb92aa12#\e1f8543ba021d452b8b620b1750e8e13\System.Runtime.Serialization.ni.dll" />
+    <Allow ID="ID_ALLOW_A_113_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runtc259d85b#\e7f9c0cdc9ff5640f9daf7930d01d2e9\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runtc259d85b#\e7f9c0cdc9ff5640f9daf7930d01d2e9\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_115_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Net.Http\098ab127fd96c95d2e5258c0fa965a16\System.Net.Http.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Net.Http\098ab127fd96c95d2e5258c0fa965a16\System.Net.Http.ni.dll" />
+    <Allow ID="ID_ALLOW_A_117_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Management\d6b21b4e4f49b98b955d89d8d073ebc0\System.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Management\d6b21b4e4f49b98b955d89d8d073ebc0\System.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_119_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Core\98e1e8cab4a10a9028b5417d87ca1d51\System.Core.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Core\98e1e8cab4a10a9028b5417d87ca1d51\System.Core.ni.dll" />
+    <Allow ID="ID_ALLOW_A_11B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\f191daccb06325e80fb65876c7ec847f\System.Configuration.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\f191daccb06325e80fb65876c7ec847f\System.Configuration.ni.dll" />
+    <Allow ID="ID_ALLOW_A_11D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\SrpUxSnapIn\b8a6044a02b3966398c0bc8b65dbc629\SrpUxSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\SrpUxSnapIn\b8a6044a02b3966398c0bc8b65dbc629\SrpUxSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_11F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\SecurityAudf6921413#\9f71a7dbd7c57c4e78a63ea3b7b4818a\SecurityAuditPoliciesSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\SecurityAudf6921413#\9f71a7dbd7c57c4e78a63ea3b7b4818a\SecurityAuditPoliciesSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_121_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\PresentationCore\a4c01d2e2144846e05ace1a451781dce\PresentationCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\PresentationCore\a4c01d2e2144846e05ace1a451781dce\PresentationCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_123_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatioaec034ca#\f7a78d3b0fe885d28ff288fdd157cffc\PresentationFramework.Aero2.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatioaec034ca#\f7a78d3b0fe885d28ff288fdd157cffc\PresentationFramework.Aero2.ni.dll" />
+    <Allow ID="ID_ALLOW_A_125_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatio5ae0f00f#\d63bb278d1e02be7ee254a65edf90b97\PresentationFramework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatio5ae0f00f#\d63bb278d1e02be7ee254a65edf90b97\PresentationFramework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_127_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\napinit\2c4cc0a922eff15e72c25dd30d14f7a0\napinit.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\napinit\2c4cc0a922eff15e72c25dd30d14f7a0\napinit.ni.dll" />
+    <Allow ID="ID_ALLOW_A_129_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCFxCommon\ce24e5a97af984ccce1642f155e2e84b\MMCFxCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCFxCommon\ce24e5a97af984ccce1642f155e2e84b\MMCFxCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_12B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCEx\fbb401a0969cbc9ad55935a9660323b5\MMCEx.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCEx\fbb401a0969cbc9ad55935a9660323b5\MMCEx.ni.dll" />
+    <Allow ID="ID_ALLOW_A_12D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wed3937f9#\14651868def07e443e1a3521ec658678\Microsoft.Windows.Diagnosis.SDCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wed3937f9#\14651868def07e443e1a3521ec658678\Microsoft.Windows.Diagnosis.SDCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_12F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.We9f24001#\530bf051381571e9216f8ed5a65a7c6e\Microsoft.WSMan.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.We9f24001#\530bf051381571e9216f8ed5a65a7c6e\Microsoft.WSMan.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_131_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wd518ee0d#\ed4d2ae754b3e6313c053c4ff93f38d5\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wd518ee0d#\ed4d2ae754b3e6313c053c4ff93f38d5\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll" />
+    <Allow ID="ID_ALLOW_A_133_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wcffedcb4#\45a7552c90dd166f8bf8da1f87c791b8\Microsoft.WindowsSearch.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wcffedcb4#\45a7552c90dd166f8bf8da1f87c791b8\Microsoft.WindowsSearch.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_135_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wad78daf4#\798743f03ab04ff55f4e46a38e340344\Microsoft.Windows.Diagnosis.SDHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wad78daf4#\798743f03ab04ff55f4e46a38e340344\Microsoft.Windows.Diagnosis.SDHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_137_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W79a81d80#\5899c3982511dc8a34aaabf171212649\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W79a81d80#\5899c3982511dc8a34aaabf171212649\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll" />
+    <Allow ID="ID_ALLOW_A_139_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W708fc392#\18018f17241dff6108750fb4313a86d5\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W708fc392#\18018f17241dff6108750fb4313a86d5\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll" />
+    <Allow ID="ID_ALLOW_A_13B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W69ef49d2#\6879885109f7a07bbec4ddb9980f710d\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W69ef49d2#\6879885109f7a07bbec4ddb9980f710d\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll" />
+    <Allow ID="ID_ALLOW_A_13D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W3cdb5602#\6dd740b7431005d78f540c3dafc441ba\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W3cdb5602#\6dd740b7431005d78f540c3dafc441ba\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll" />
+    <Allow ID="ID_ALLOW_A_13F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W193497eb#\f67b0c8a5c5b49738ed1d68134c1ead0\Microsoft.WSMan.Runtime.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W193497eb#\f67b0c8a5c5b49738ed1d68134c1ead0\Microsoft.WSMan.Runtime.ni.dll" />
+    <Allow ID="ID_ALLOW_A_141_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W0bb5dac4#\96d3c105f7ed488c68159b0bc516dd56\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W0bb5dac4#\96d3c105f7ed488c68159b0bc516dd56\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll" />
+    <Allow ID="ID_ALLOW_A_143_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sb6a1f1bc#\a2a3f1b2492900a345020e14240e442d\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sb6a1f1bc#\a2a3f1b2492900a345020e14240e442d\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll" />
+    <Allow ID="ID_ALLOW_A_145_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sa56e3556#\42dcce943ec120e499b959e791244a15\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sa56e3556#\42dcce943ec120e499b959e791244a15\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_147_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S88747207#\c52953d5f9794b6a882e23486d1c3d8f\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S88747207#\c52953d5f9794b6a882e23486d1c3d8f\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_149_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S54faafb0#\188d4bc8b95d710f0c89a075f4086d14\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S54faafb0#\188d4bc8b95d710f0c89a075f4086d14\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll" />
+    <Allow ID="ID_ALLOW_A_14B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S356e1ba0#\9beda0f1c6c07df0397427ad822b9e91\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S356e1ba0#\9beda0f1c6c07df0397427ad822b9e91\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_14D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S0f8e494c#\33215fc7a087ceee9ca36dede9af06cd\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S0f8e494c#\33215fc7a087ceee9ca36dede9af06cd\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll" />
+    <Allow ID="ID_ALLOW_A_14F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Pefb7a36b#\206ebf0ba6ef30453b9724689c3a52c0\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Pefb7a36b#\206ebf0ba6ef30453b9724689c3a52c0\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_151_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P9de5a786#\f54e7688a7268ee0e071d9266443eead\Microsoft.PowerShell.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P9de5a786#\f54e7688a7268ee0e071d9266443eead\Microsoft.PowerShell.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_153_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P6f9a5e83#\71c97f18fe2c2277cdbaa1717b42e071\Microsoft.PowerShell.Security.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P6f9a5e83#\71c97f18fe2c2277cdbaa1717b42e071\Microsoft.PowerShell.Security.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_155_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P655586bb#\24138972a2d005f1725fbb81a26be719\Microsoft.PowerShell.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P655586bb#\24138972a2d005f1725fbb81a26be719\Microsoft.PowerShell.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_157_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P34f388c1#\e6ad4a26a88b5220847675549af2fe59\Microsoft.PowerShell.Diagnostics.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P34f388c1#\e6ad4a26a88b5220847675549af2fe59\Microsoft.PowerShell.Diagnostics.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_159_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P1706cafe#\932086c76b7579da854e25a122471a31\Microsoft.PowerShell.Commands.Diagnostics.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P1706cafe#\932086c76b7579da854e25a122471a31\Microsoft.PowerShell.Commands.Diagnostics.ni.dll" />
+    <Allow ID="ID_ALLOW_A_15B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P08ac43d5#\0ed8310dcc7f81a13e0bc83e12320c51\Microsoft.PowerShell.Utility.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P08ac43d5#\0ed8310dcc7f81a13e0bc83e12320c51\Microsoft.PowerShell.Utility.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_15D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P047767ce#\93c34e140aca87676746c79de0cdfb93\Microsoft.PowerShell.Core.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P047767ce#\93c34e140aca87676746c79de0cdfb93\Microsoft.PowerShell.Core.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_15F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mff1be75b#\ad6b00f5280d100d47ae3c9fdf662997\Microsoft.ManagementConsole.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mff1be75b#\ad6b00f5280d100d47ae3c9fdf662997\Microsoft.ManagementConsole.ni.dll" />
+    <Allow ID="ID_ALLOW_A_161_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mf49f6405#\5da7d11202448a3d7d772888ee9bb993\Microsoft.Management.Infrastructure.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mf49f6405#\5da7d11202448a3d7d772888ee9bb993\Microsoft.Management.Infrastructure.ni.dll" />
+    <Allow ID="ID_ALLOW_A_163_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ic1a2041b#\01d4c7829883b6173535f6c6b9121fdd\Microsoft.Isam.Esent.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ic1a2041b#\01d4c7829883b6173535f6c6b9121fdd\Microsoft.Isam.Esent.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_165_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.I0cd65b90#\bd7670366a90cd0eb7414cd9a28aab52\Microsoft.Isam.Esent.Interop.Wsa.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.I0cd65b90#\bd7670366a90cd0eb7414cd9a28aab52\Microsoft.Isam.Esent.Interop.Wsa.ni.dll" />
+    <Allow ID="ID_ALLOW_A_167_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ga41585c2#\fe3a3af5f87c003e640b830200af0ee4\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ga41585c2#\fe3a3af5f87c003e640b830200af0ee4\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll" />
+    <Allow ID="ID_ALLOW_A_169_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.D0ff51f83#\f5bc5199d7f0de553e517108266532af\Microsoft.Dtc.PowerShell.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.D0ff51f83#\f5bc5199d7f0de553e517108266532af\Microsoft.Dtc.PowerShell.ni.dll" />
+    <Allow ID="ID_ALLOW_A_16B_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Abf69f55a#\f73834c7d4eb3cffd38c212f70a90b4f\Microsoft.ApplicationId.Framework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Abf69f55a#\f73834c7d4eb3cffd38c212f70a90b4f\Microsoft.ApplicationId.Framework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_16D_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.A26c32abb#\009d35e0a06fc7944b98dd3008b16cb1\Microsoft.ApplicationId.RuleWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.A26c32abb#\009d35e0a06fc7944b98dd3008b16cb1\Microsoft.ApplicationId.RuleWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_16F_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\EventViewer\1f5fe0fb04c28df710f6041d0479b7d8\EventViewer.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\EventViewer\1f5fe0fb04c28df710f6041d0479b7d8\EventViewer.ni.dll" />
+    <Allow ID="ID_ALLOW_A_171_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\AuditPolicy42d3d2cc#\07f1bb9a3acf8cec363c3391843701ab\AuditPolicyGPManagedStubs.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\AuditPolicy42d3d2cc#\07f1bb9a3acf8cec363c3391843701ab\AuditPolicyGPManagedStubs.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_1_0_0" FriendlyName="C:\Windows\System32\wbem\AutoRecover\1DE7BE7BA35D977F49656C02C66058FC.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\System32\wbem\AutoRecover\1DE7BE7BA35D977F49656C02C66058FC.mof" />
+    <Allow ID="ID_ALLOW_A_2_0_0" FriendlyName="C:\Windows\System32\wbem\AutoRecover\4D06958C26E8EE4ED93ADDC0E43A3DFB.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\System32\wbem\AutoRecover\4D06958C26E8EE4ED93ADDC0E43A3DFB.mof" />
+    <Allow ID="ID_ALLOW_A_3_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\r\snmpreg.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\r\snmpreg.mof" />
+    <Allow ID="ID_ALLOW_A_4_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\r\snmpsmir.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\r\snmpsmir.mof" />
+    <Allow ID="ID_ALLOW_A_5_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\f\snmpreg.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\f\snmpreg.mof" />
+    <Allow ID="ID_ALLOW_A_6_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\f\snmpsmir.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\wow64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_0ae8261d8cba5128\f\snmpsmir.mof" />
+    <Allow ID="ID_ALLOW_A_8_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\msil_microsoft.updateservices.baseapi_31bf3856ad364e35_10.0.18362.145_none_c1a0649f68e886aa\microsoft.updateservices.baseapi.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\msil_microsoft.updateservices.baseapi_31bf3856ad364e35_10.0.18362.145_none_c1a0649f68e886aa\microsoft.updateservices.baseapi.dll" />
+    <Allow ID="ID_ALLOW_A_9_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\r\snmpreg.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\r\snmpreg.mof" />
+    <Allow ID="ID_ALLOW_A_A_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\r\snmpsmir.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\r\snmpsmir.mof" />
+    <Allow ID="ID_ALLOW_A_B_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\f\snmpreg.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\f\snmpreg.mof" />
+    <Allow ID="ID_ALLOW_A_C_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\f\snmpsmir.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-wmi-snmp-provider_31bf3856ad364e35_10.0.18362.145_none_00937bcb58598f2d\f\snmpsmir.mof" />
+    <Allow ID="ID_ALLOW_A_D_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilot.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilot.js" />
+    <Allow ID="ID_ALLOW_A_E_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotvetoconfirmation-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotvetoconfirmation-page.js" />
+    <Allow ID="ID_ALLOW_A_F_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotvetoconfirmation-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotvetoconfirmation-vm.js" />
+    <Allow ID="ID_ALLOW_A_10_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotwhiteglovelanding-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotwhiteglovelanding-page.js" />
+    <Allow ID="ID_ALLOW_A_11_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotwhiteglovelanding-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotwhiteglovelanding-vm.js" />
+    <Allow ID="ID_ALLOW_A_12_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotwhitegloveresult-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\autopilotwhitegloveresult-page.js" />
+    <Allow ID="ID_ALLOW_A_13_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilot.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilot.js" />
+    <Allow ID="ID_ALLOW_A_14_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotactivation-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotactivation-page.js" />
+    <Allow ID="ID_ALLOW_A_15_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotactivation-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotactivation-vm.js" />
+    <Allow ID="ID_ALLOW_A_16_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotcelebration-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotcelebration-page.js" />
+    <Allow ID="ID_ALLOW_A_17_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotcelebration-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotcelebration-vm.js" />
+    <Allow ID="ID_ALLOW_A_18_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotreboot-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotreboot-page.js" />
+    <Allow ID="ID_ALLOW_A_19_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotreboot-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotreboot-vm.js" />
+    <Allow ID="ID_ALLOW_A_1A_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotupdate-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotupdate-page.js" />
+    <Allow ID="ID_ALLOW_A_1B_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotupdate-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotupdate-vm.js" />
+    <Allow ID="ID_ALLOW_A_1C_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotveto-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotveto-page.js" />
+    <Allow ID="ID_ALLOW_A_1D_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotveto-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeautopilotveto-vm.js" />
+    <Allow ID="ID_ALLOW_A_1E_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeenterpriseprovisioning-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeenterpriseprovisioning-page.js" />
+    <Allow ID="ID_ALLOW_A_1F_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeenterpriseprovisioning-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeenterpriseprovisioning-vm.js" />
+    <Allow ID="ID_ALLOW_A_20_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeprovisioningprogress-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeprovisioningprogress-page.js" />
+    <Allow ID="ID_ALLOW_A_21_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeprovisioningprogress-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\r\oobeprovisioningprogress-vm.js" />
+    <Allow ID="ID_ALLOW_A_22_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilot.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilot.js" />
+    <Allow ID="ID_ALLOW_A_23_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotvetoconfirmation-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotvetoconfirmation-page.js" />
+    <Allow ID="ID_ALLOW_A_24_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotvetoconfirmation-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotvetoconfirmation-vm.js" />
+    <Allow ID="ID_ALLOW_A_25_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotwhiteglovelanding-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotwhiteglovelanding-page.js" />
+    <Allow ID="ID_ALLOW_A_26_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotwhiteglovelanding-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotwhiteglovelanding-vm.js" />
+    <Allow ID="ID_ALLOW_A_27_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotwhitegloveresult-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\autopilotwhitegloveresult-page.js" />
+    <Allow ID="ID_ALLOW_A_28_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilot.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilot.js" />
+    <Allow ID="ID_ALLOW_A_29_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotactivation-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotactivation-page.js" />
+    <Allow ID="ID_ALLOW_A_2A_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotactivation-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotactivation-vm.js" />
+    <Allow ID="ID_ALLOW_A_2B_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotcelebration-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotcelebration-page.js" />
+    <Allow ID="ID_ALLOW_A_2C_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotcelebration-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotcelebration-vm.js" />
+    <Allow ID="ID_ALLOW_A_2D_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotreboot-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotreboot-page.js" />
+    <Allow ID="ID_ALLOW_A_2E_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotreboot-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotreboot-vm.js" />
+    <Allow ID="ID_ALLOW_A_2F_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotupdate-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotupdate-page.js" />
+    <Allow ID="ID_ALLOW_A_30_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotupdate-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotupdate-vm.js" />
+    <Allow ID="ID_ALLOW_A_31_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotveto-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotveto-page.js" />
+    <Allow ID="ID_ALLOW_A_32_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotveto-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeautopilotveto-vm.js" />
+    <Allow ID="ID_ALLOW_A_33_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeenterpriseprovisioning-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeenterpriseprovisioning-page.js" />
+    <Allow ID="ID_ALLOW_A_34_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeenterpriseprovisioning-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeenterpriseprovisioning-vm.js" />
+    <Allow ID="ID_ALLOW_A_35_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeprovisioningprogress-page.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeprovisioningprogress-page.js" />
+    <Allow ID="ID_ALLOW_A_36_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeprovisioningprogress-vm.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-management-oobe_31bf3856ad364e35_10.0.18362.145_none_c7fde7e5deaace20\f\oobeprovisioningprogress-vm.js" />
+    <Allow ID="ID_ALLOW_A_37_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-k..distribution-center_31bf3856ad364e35_10.0.18362.175_none_e16f55ce25f30776\r\kdcsvc.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-k..distribution-center_31bf3856ad364e35_10.0.18362.175_none_e16f55ce25f30776\r\kdcsvc.mof" />
+    <Allow ID="ID_ALLOW_A_38_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-k..distribution-center_31bf3856ad364e35_10.0.18362.175_none_e16f55ce25f30776\f\kdcsvc.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-k..distribution-center_31bf3856ad364e35_10.0.18362.175_none_e16f55ce25f30776\f\kdcsvc.mof" />
+    <Allow ID="ID_ALLOW_A_39_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-d..toryservices-ntdsai_31bf3856ad364e35_10.0.18362.145_none_469e3f2e4abc9556\r\ntdsa.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-d..toryservices-ntdsai_31bf3856ad364e35_10.0.18362.145_none_469e3f2e4abc9556\r\ntdsa.mof" />
+    <Allow ID="ID_ALLOW_A_3A_0_0" FriendlyName="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-d..toryservices-ntdsai_31bf3856ad364e35_10.0.18362.145_none_469e3f2e4abc9556\f\ntdsa.mof FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\servicing\LCU\Package_for_RollupFix~31bf3856ad364e35~amd64~~18362.175.1.6\amd64_microsoft-windows-d..toryservices-ntdsai_31bf3856ad364e35_10.0.18362.145_none_469e3f2e4abc9556\f\ntdsa.mof" />
+    <Allow ID="ID_ALLOW_A_3B_0_0" FriendlyName="C:\Windows\Containers\WindowsDefenderApplicationGuard.bin FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\Containers\WindowsDefenderApplicationGuard.bin" />
+    <Allow ID="ID_ALLOW_A_3C_0_0" FriendlyName="C:\Windows\Containers\WindowsDefenderApplicationGuard.wim FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\Containers\WindowsDefenderApplicationGuard.wim" />
+    <Allow ID="ID_ALLOW_A_3E_0_0" FriendlyName="C:\Windows\assembly\temp\CSBPRYE2AD\System.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\temp\CSBPRYE2AD\System.ni.dll" />
+    <Allow ID="ID_ALLOW_A_40_0_0" FriendlyName="C:\Windows\assembly\temp\3GJK7EV8MZ\System.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\temp\3GJK7EV8MZ\System.ni.dll" />
+    <Allow ID="ID_ALLOW_A_42_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\WindowsBase\3ef48158566b2233eed12c8e1ae091ee\WindowsBase.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\WindowsBase\3ef48158566b2233eed12c8e1ae091ee\WindowsBase.ni.dll" />
+    <Allow ID="ID_ALLOW_A_44_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\TaskScheduler\9de160d46b48a0fe295ce959eeac080d\TaskScheduler.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\TaskScheduler\9de160d46b48a0fe295ce959eeac080d\TaskScheduler.ni.dll" />
+    <Allow ID="ID_ALLOW_A_46_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml.Linq\b63cf5e21f052ba4a8692063e34f21ad\System.Xml.Linq.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml.Linq\b63cf5e21f052ba4a8692063e34f21ad\System.Xml.Linq.ni.dll" />
+    <Allow ID="ID_ALLOW_A_48_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml\6203adf48ad0513e4b0c675b619a12b6\System.Xml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml\6203adf48ad0513e4b0c675b619a12b6\System.Xml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_4A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xaml\b60e24273f5a0194ae64ac093603330b\System.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xaml\b60e24273f5a0194ae64ac093603330b\System.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_4C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Windows.Forms\9c75c3614ac4c3be2bc87c2e36147dc8\System.Windows.Forms.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Windows.Forms\9c75c3614ac4c3be2bc87c2e36147dc8\System.Windows.Forms.ni.dll" />
+    <Allow ID="ID_ALLOW_A_4E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web.Services\a34c66c546de4452012c8176b0e16394\System.Web.Services.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web.Services\a34c66c546de4452012c8176b0e16394\System.Web.Services.ni.dll" />
+    <Allow ID="ID_ALLOW_A_50_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web\cd8858efdef7860aa66c9803c651cc34\System.Web.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Web\cd8858efdef7860aa66c9803c651cc34\System.Web.ni.dll" />
+    <Allow ID="ID_ALLOW_A_52_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Transactions\bff93320eca4af3b82b1fa58837ddfcb\System.Transactions.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Transactions\bff93320eca4af3b82b1fa58837ddfcb\System.Transactions.ni.dll" />
+    <Allow ID="ID_ALLOW_A_54_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.ServiceModel\34d45c426efd2636a4ed301a6f16f213\System.ServiceModel.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.ServiceModel\34d45c426efd2636a4ed301a6f16f213\System.ServiceModel.ni.dll" />
+    <Allow ID="ID_ALLOW_A_56_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Serv759bfb78#\be48e5966328a1b3e1e637fefcfc3b5d\System.ServiceProcess.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Serv759bfb78#\be48e5966328a1b3e1e637fefcfc3b5d\System.ServiceProcess.ni.dll" />
+    <Allow ID="ID_ALLOW_A_58_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runteb92aa12#\64c3d1e4e09654841a829b4a97889c50\System.Runtime.Serialization.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runteb92aa12#\64c3d1e4e09654841a829b4a97889c50\System.Runtime.Serialization.ni.dll" />
+    <Allow ID="ID_ALLOW_A_5A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runtc259d85b#\18e27a0eab45046f90fb3682d25fa89f\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runtc259d85b#\18e27a0eab45046f90fb3682d25fa89f\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_5C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runt73a1fc9d#\d1f93c82f0086fd3116b372c07bd5ab9\System.Runtime.Remoting.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Runt73a1fc9d#\d1f93c82f0086fd3116b372c07bd5ab9\System.Runtime.Remoting.ni.dll" />
+    <Allow ID="ID_ALLOW_A_5E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Numerics\5cfa824ef55c5e7dd5987ed44d152885\System.Numerics.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Numerics\5cfa824ef55c5e7dd5987ed44d152885\System.Numerics.ni.dll" />
+    <Allow ID="ID_ALLOW_A_60_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Net.Http\04c08137d266118f556af5dd9e20e059\System.Net.Http.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Net.Http\04c08137d266118f556af5dd9e20e059\System.Net.Http.ni.dll" />
+    <Allow ID="ID_ALLOW_A_62_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Management\96e6b0126238544e907ec19d1be282a0\System.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Management\96e6b0126238544e907ec19d1be282a0\System.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_64_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\f8ab79b6bf1b5e1fb7787cf4909c4ffb\System.Management.Automation.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\f8ab79b6bf1b5e1fb7787cf4909c4ffb\System.Management.Automation.ni.dll" />
+    <Allow ID="ID_ALLOW_A_66_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\5f95b93dbe1d38fe8cbbcb8e65a0bcab\System.Management.Automation.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\5f95b93dbe1d38fe8cbbcb8e65a0bcab\System.Management.Automation.ni.dll" />
+    <Allow ID="ID_ALLOW_A_68_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Drawing\14eeb7566456f10967233ee0d1cb7987\System.Drawing.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Drawing\14eeb7566456f10967233ee0d1cb7987\System.Drawing.ni.dll" />
+    <Allow ID="ID_ALLOW_A_6A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Dired13b18a9#\e5a074f151a24c92f7e88e410d879bf1\System.DirectoryServices.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Dired13b18a9#\e5a074f151a24c92f7e88e410d879bf1\System.DirectoryServices.ni.dll" />
+    <Allow ID="ID_ALLOW_A_6C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Data\c9eaf576aa377b69c1d5a6a6ad427a57\System.Data.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Data\c9eaf576aa377b69c1d5a6a6ad427a57\System.Data.ni.dll" />
+    <Allow ID="ID_ALLOW_A_6E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Core\8981339ee81e4b6617a96f67163f6ded\System.Core.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Core\8981339ee81e4b6617a96f67163f6ded\System.Core.ni.dll" />
+    <Allow ID="ID_ALLOW_A_70_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Configuration\201259c764eff75b758b512aca0ecf0e\System.Configuration.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Configuration\201259c764eff75b758b512aca0ecf0e\System.Configuration.ni.dll" />
+    <Allow ID="ID_ALLOW_A_72_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Confe64a9051#\1a25d3dca37ad51c86900ecc290841b8\System.Configuration.Install.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Confe64a9051#\1a25d3dca37ad51c86900ecc290841b8\System.Configuration.Install.ni.dll" />
+    <Allow ID="ID_ALLOW_A_74_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\SrpUxSnapIn\82541a6abcc76c28f12c834b09cc7948\SrpUxSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\SrpUxSnapIn\82541a6abcc76c28f12c834b09cc7948\SrpUxSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_76_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\SecurityAudf6921413#\38c8a9bd0f07df75e9760962775d2644\SecurityAuditPoliciesSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\SecurityAudf6921413#\38c8a9bd0f07df75e9760962775d2644\SecurityAuditPoliciesSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_78_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\PresentationCore\fe02c072323200b743baf146c7a8886f\PresentationCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\PresentationCore\fe02c072323200b743baf146c7a8886f\PresentationCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_7A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatioaec034ca#\c18da48b8e7ad6906110e5523b1c3973\PresentationFramework.Aero2.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatioaec034ca#\c18da48b8e7ad6906110e5523b1c3973\PresentationFramework.Aero2.ni.dll" />
+    <Allow ID="ID_ALLOW_A_7C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatio5ae0f00f#\705e13c7b1d51f8e41a154fc81f62caf\PresentationFramework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Presentatio5ae0f00f#\705e13c7b1d51f8e41a154fc81f62caf\PresentationFramework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_7E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\napinit\1253c1b1e9c7445ecc7f8e349a388f53\napinit.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\napinit\1253c1b1e9c7445ecc7f8e349a388f53\napinit.ni.dll" />
+    <Allow ID="ID_ALLOW_A_80_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\napcrypt\179f15b31f9990bb4d065e6a4b540de6\napcrypt.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\napcrypt\179f15b31f9990bb4d065e6a4b540de6\napcrypt.ni.dll" />
+    <Allow ID="ID_ALLOW_A_82_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCFxCommon\00177d2fd3be3e0c7c9126315050e01d\MMCFxCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCFxCommon\00177d2fd3be3e0c7c9126315050e01d\MMCFxCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_84_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCEx\6190efad06ae751917c7908a71d70cba\MMCEx.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\MMCEx\6190efad06ae751917c7908a71d70cba\MMCEx.ni.dll" />
+    <Allow ID="ID_ALLOW_A_86_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\MIGUIControls\606926d25e47ed711163e2592db0f108\MIGUIControls.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\MIGUIControls\606926d25e47ed711163e2592db0f108\MIGUIControls.ni.dll" />
+    <Allow ID="ID_ALLOW_A_88_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wed3937f9#\fb396b4fd02a524c802bfcce2da10dc2\Microsoft.Windows.Diagnosis.SDCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wed3937f9#\fb396b4fd02a524c802bfcce2da10dc2\Microsoft.Windows.Diagnosis.SDCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_8A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We9f24001#\5f21459b8c54a3371c5a81d939371fe9\Microsoft.WSMan.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We9f24001#\5f21459b8c54a3371c5a81d939371fe9\Microsoft.WSMan.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_8C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We0722664#\eff3933fa72dfcd777da25e7478b7289\Microsoft.WSMan.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.We0722664#\eff3933fa72dfcd777da25e7478b7289\Microsoft.WSMan.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_8E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd75d181a#\e56f16c58415677b629da72e90ada551\Microsoft.Windows.Diagnosis.SDEngine.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd75d181a#\e56f16c58415677b629da72e90ada551\Microsoft.Windows.Diagnosis.SDEngine.ni.dll" />
+    <Allow ID="ID_ALLOW_A_90_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd518ee0d#\1f47a9ad0023080710d701893feb5b89\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wd518ee0d#\1f47a9ad0023080710d701893feb5b89\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll" />
+    <Allow ID="ID_ALLOW_A_92_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wcffedcb4#\2711934d8f37d47be1065c273ebfb76d\Microsoft.WindowsSearch.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wcffedcb4#\2711934d8f37d47be1065c273ebfb76d\Microsoft.WindowsSearch.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_94_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wad78daf4#\d52b75278b474c1fe1543af33069c1aa\Microsoft.Windows.Diagnosis.SDHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Wad78daf4#\d52b75278b474c1fe1543af33069c1aa\Microsoft.Windows.Diagnosis.SDHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_96_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W79a81d80#\e3470a51df58249e98e19a230904ff55\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W79a81d80#\e3470a51df58249e98e19a230904ff55\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll" />
+    <Allow ID="ID_ALLOW_A_98_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W708fc392#\df085299fe8c766cd8e2dfb2907dc56b\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W708fc392#\df085299fe8c766cd8e2dfb2907dc56b\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll" />
+    <Allow ID="ID_ALLOW_A_9A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W69ef49d2#\2a58b370715e983fed230a2760b54e13\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W69ef49d2#\2a58b370715e983fed230a2760b54e13\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll" />
+    <Allow ID="ID_ALLOW_A_9C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W3cdb5602#\d11b12a4591fba049c851381cab74907\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W3cdb5602#\d11b12a4591fba049c851381cab74907\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll" />
+    <Allow ID="ID_ALLOW_A_9E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2ded559f#\54992fa95e2b4bb8498f22b2585e4496\Microsoft.WindowsAuthenticationProtocols.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2ded559f#\54992fa95e2b4bb8498f22b2585e4496\Microsoft.WindowsAuthenticationProtocols.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A0_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2d29a719#\d9aeb3a1b00be8c84a309902698fc53f\Microsoft.Windows.DSC.CoreConfProviders.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W2d29a719#\d9aeb3a1b00be8c84a309902698fc53f\Microsoft.Windows.DSC.CoreConfProviders.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A2_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W193497eb#\a503411cabdb82ba5c69073e0af9303a\Microsoft.WSMan.Runtime.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W193497eb#\a503411cabdb82ba5c69073e0af9303a\Microsoft.WSMan.Runtime.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A4_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W0bb5dac4#\8323816b255291a301d71eadfd83493a\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.W0bb5dac4#\8323816b255291a301d71eadfd83493a\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A6_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.V9921e851#\c3c51e8359cbb7d111227135cf75e2ab\Microsoft.VisualBasic.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.V9921e851#\c3c51e8359cbb7d111227135cf75e2ab\Microsoft.VisualBasic.ni.dll" />
+    <Allow ID="ID_ALLOW_A_A8_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.T9d753d8c#\f273509712b68431855aa4b70247cf97\Microsoft.Tpm.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.T9d753d8c#\f273509712b68431855aa4b70247cf97\Microsoft.Tpm.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_AA_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sb6a1f1bc#\909fa143b4b68411a7af29f9d7b49406\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sb6a1f1bc#\909fa143b4b68411a7af29f9d7b49406\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll" />
+    <Allow ID="ID_ALLOW_A_AC_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sa56e3556#\ec20325d4cee54b8a84b55763d334add\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Sa56e3556#\ec20325d4cee54b8a84b55763d334add\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_AE_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S88747207#\63920ade0e6f84423e1cb9f4ee6ed2cc\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S88747207#\63920ade0e6f84423e1cb9f4ee6ed2cc\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B0_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S54faafb0#\feca75e0b45c6638b0935dc858f9e6bc\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S54faafb0#\feca75e0b45c6638b0935dc858f9e6bc\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B2_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S356e1ba0#\291f336b19214ced7eadff27803f424f\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S356e1ba0#\291f336b19214ced7eadff27803f424f\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B4_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S1bc92e04#\ed1b93699d859bc41ddfb3a5ae6c06fa\Microsoft.SecureBoot.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S1bc92e04#\ed1b93699d859bc41ddfb3a5ae6c06fa\Microsoft.SecureBoot.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B6_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S0f8e494c#\cfc5a4487849531d77e73f733a94ce23\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.S0f8e494c#\cfc5a4487849531d77e73f733a94ce23\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll" />
+    <Allow ID="ID_ALLOW_A_B8_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pefb7a36b#\2aa6a5fe8f74724f51dfcef9f6b607a2\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pefb7a36b#\2aa6a5fe8f74724f51dfcef9f6b607a2\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_BA_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pd3efef62#\c2628bd4c7cad2981a7205a39b1b1d45\Microsoft.PowerShell.ISECommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pd3efef62#\c2628bd4c7cad2981a7205a39b1b1d45\Microsoft.PowerShell.ISECommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_BC_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pcd26229b#\f9267b29259f005340ec42589a31ff41\Microsoft.PowerShell.GraphicalHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pcd26229b#\f9267b29259f005340ec42589a31ff41\Microsoft.PowerShell.GraphicalHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_BE_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\682045938de3c7f59241eb7ea9507118\Microsoft.PowerShell.ConsoleHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\682045938de3c7f59241eb7ea9507118\Microsoft.PowerShell.ConsoleHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C0_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\347a3db4b3c5436361c6ac09a8fc099c\Microsoft.PowerShell.ConsoleHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\347a3db4b3c5436361c6ac09a8fc099c\Microsoft.PowerShell.ConsoleHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C2_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pae3498d9#\0da916bfb4d884fab53dfe15cffb5e3b\Microsoft.PowerShell.Commands.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pae3498d9#\0da916bfb4d884fab53dfe15cffb5e3b\Microsoft.PowerShell.Commands.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C4_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pad0e0718#\04968cdba4496155b6e346ce3303df2e\Microsoft.PowerShell.Cmdletization.OData.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pad0e0718#\04968cdba4496155b6e346ce3303df2e\Microsoft.PowerShell.Cmdletization.OData.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C6_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P9de5a786#\dc150f688c4a61a773528049dce18e5f\Microsoft.PowerShell.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P9de5a786#\dc150f688c4a61a773528049dce18e5f\Microsoft.PowerShell.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_C8_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f9a5e83#\bcac5cc57f513477a9f0fe4ddbeffbf9\Microsoft.PowerShell.Security.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f9a5e83#\bcac5cc57f513477a9f0fe4ddbeffbf9\Microsoft.PowerShell.Security.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_CA_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f792626#\e7b71c0ff8195c964ffb56fe8f23c3b0\Microsoft.PowerShell.Security.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f792626#\e7b71c0ff8195c964ffb56fe8f23c3b0\Microsoft.PowerShell.Security.ni.dll" />
+    <Allow ID="ID_ALLOW_A_CC_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P655586bb#\a57fff7789bc55e9653646b66304877b\Microsoft.PowerShell.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P655586bb#\a57fff7789bc55e9653646b66304877b\Microsoft.PowerShell.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_CE_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P521220ea#\ff57feb71e14562e7f6684ebe9582959\Microsoft.PowerShell.Commands.Utility.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P521220ea#\ff57feb71e14562e7f6684ebe9582959\Microsoft.PowerShell.Commands.Utility.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D0_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P39041136#\459578cb7fdebc47d911df49c4e49ce1\Microsoft.PowerShell.ScheduledJob.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P39041136#\459578cb7fdebc47d911df49c4e49ce1\Microsoft.PowerShell.ScheduledJob.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D2_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P34f388c1#\03df871d5f73080fd6f212c63cccf018\Microsoft.PowerShell.Diagnostics.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P34f388c1#\03df871d5f73080fd6f212c63cccf018\Microsoft.PowerShell.Diagnostics.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D4_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P1706cafe#\8ce1fcf6363676b56ed565e3273ea48f\Microsoft.PowerShell.Commands.Diagnostics.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P1706cafe#\8ce1fcf6363676b56ed565e3273ea48f\Microsoft.PowerShell.Commands.Diagnostics.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D6_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P10d01611#\afb36595fe95c56652374387119af7dc\Microsoft.PowerShell.Editor.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P10d01611#\afb36595fe95c56652374387119af7dc\Microsoft.PowerShell.Editor.ni.dll" />
+    <Allow ID="ID_ALLOW_A_D8_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P0e11b656#\b7133dd51c051bfb710e77bc7dc4dd76\Microsoft.PowerShell.GPowerShell.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P0e11b656#\b7133dd51c051bfb710e77bc7dc4dd76\Microsoft.PowerShell.GPowerShell.ni.dll" />
+    <Allow ID="ID_ALLOW_A_DA_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P08ac43d5#\39abbce217fc5760b53e0acff8d59a77\Microsoft.PowerShell.Utility.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P08ac43d5#\39abbce217fc5760b53e0acff8d59a77\Microsoft.PowerShell.Utility.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_DC_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P047767ce#\bc79eaed5ab5b2470f83066d0a3bacbc\Microsoft.PowerShell.Core.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P047767ce#\bc79eaed5ab5b2470f83066d0a3bacbc\Microsoft.PowerShell.Core.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_DE_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mff1be75b#\107affe73772d5c08823f625bea71d57\Microsoft.ManagementConsole.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mff1be75b#\107affe73772d5c08823f625bea71d57\Microsoft.ManagementConsole.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E0_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf5ac9168#\4f77a7aa3346812e119d4765899c13c1\Microsoft.Management.Infrastructure.CimCmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf5ac9168#\4f77a7aa3346812e119d4765899c13c1\Microsoft.Management.Infrastructure.CimCmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E2_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf49f6405#\dc864d9720c5d1cc536e9af1b4432d30\Microsoft.Management.Infrastructure.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf49f6405#\dc864d9720c5d1cc536e9af1b4432d30\Microsoft.Management.Infrastructure.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E4_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.M870d558a#\1a1a7661fd4c3aeb11d6f25e02e59cb7\Microsoft.Management.Infrastructure.Native.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.M870d558a#\1a1a7661fd4c3aeb11d6f25e02e59cb7\Microsoft.Management.Infrastructure.Native.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E6_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Kd58820a5#\f46daaddb8124daa5a608da2a6c13299\Microsoft.KeyDistributionService.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Kd58820a5#\f46daaddb8124daa5a608da2a6c13299\Microsoft.KeyDistributionService.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_E8_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ic1a2041b#\05f35ca3d304130a958006e29b90f822\Microsoft.Isam.Esent.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ic1a2041b#\05f35ca3d304130a958006e29b90f822\Microsoft.Isam.Esent.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_EA_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I7676db1a#\40ae8d9372b03589b1ac4bce785166f6\Microsoft.InternationalSettings.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I7676db1a#\40ae8d9372b03589b1ac4bce785166f6\Microsoft.InternationalSettings.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_EC_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I0cd65b90#\1826c66626682557cf30b80aceec03ab\Microsoft.Isam.Esent.Interop.Wsa.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.I0cd65b90#\1826c66626682557cf30b80aceec03ab\Microsoft.Isam.Esent.Interop.Wsa.ni.dll" />
+    <Allow ID="ID_ALLOW_A_EE_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ga41585c2#\4923c9226264b75aba715131bb657af1\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Ga41585c2#\4923c9226264b75aba715131bb657af1\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F0_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G91a07420#\c123e89a67ab7fb86969cbec20266b1d\Microsoft.GroupPolicy.Reporting.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G91a07420#\c123e89a67ab7fb86969cbec20266b1d\Microsoft.GroupPolicy.Reporting.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F2_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G46fcc235#\72c0d8f431173c8445f83976d1831cfd\Microsoft.GroupPolicy.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.G46fcc235#\72c0d8f431173c8445f83976d1831cfd\Microsoft.GroupPolicy.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F4_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.D0ff51f83#\afd6b70ced4876156bdff0d4284870d5\Microsoft.Dtc.PowerShell.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.D0ff51f83#\afd6b70ced4876156bdff0d4284870d5\Microsoft.Dtc.PowerShell.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F6_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.CSharp\c6d8bc821af780baaff15184629e1f94\Microsoft.CSharp.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.CSharp\c6d8bc821af780baaff15184629e1f94\Microsoft.CSharp.ni.dll" />
+    <Allow ID="ID_ALLOW_A_F8_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C99be4d25#\db5732b5380c71da78e129feebc9af34\Microsoft.ConfigCI.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C99be4d25#\db5732b5380c71da78e129feebc9af34\Microsoft.ConfigCI.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_FA_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C26a36d2b#\cf40ee785ca819d6be7b321b1f066e5b\Microsoft.CertificateServices.PKIClient.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.C26a36d2b#\cf40ee785ca819d6be7b321b1f066e5b\Microsoft.CertificateServices.PKIClient.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_FC_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Abf69f55a#\7695dda87096ea6eaa1804bf9806f6b9\Microsoft.ApplicationId.Framework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Abf69f55a#\7695dda87096ea6eaa1804bf9806f6b9\Microsoft.ApplicationId.Framework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_FE_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.A26c32abb#\23ed37a1f41d288636d7f5f4000d37c2\Microsoft.ApplicationId.RuleWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.A26c32abb#\23ed37a1f41d288636d7f5f4000d37c2\Microsoft.ApplicationId.RuleWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_100_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\EventViewer\8b21d35750d9f32d4f63a78333cc7d9a\EventViewer.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\EventViewer\8b21d35750d9f32d4f63a78333cc7d9a\EventViewer.ni.dll" />
+    <Allow ID="ID_ALLOW_A_102_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\CustomMarshalers\124a2d805bee83fc6fdcfb77e974e4fe\CustomMarshalers.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\CustomMarshalers\124a2d805bee83fc6fdcfb77e974e4fe\CustomMarshalers.ni.dll" />
+    <Allow ID="ID_ALLOW_A_104_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\AuditPolicy42d3d2cc#\23abe2d58ff2eff034ef0380448e29f8\AuditPolicyGPManagedStubs.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\AuditPolicy42d3d2cc#\23abe2d58ff2eff034ef0380448e29f8\AuditPolicyGPManagedStubs.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_106_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_64\Accessibility\269bf957a3fc69db87b49b0b0c8303fa\Accessibility.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_64\Accessibility\269bf957a3fc69db87b49b0b0c8303fa\Accessibility.ni.dll" />
+    <Allow ID="ID_ALLOW_A_108_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\WindowsBase\0edca6007c5c28f4b080d0b66bdefa05\WindowsBase.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\WindowsBase\0edca6007c5c28f4b080d0b66bdefa05\WindowsBase.ni.dll" />
+    <Allow ID="ID_ALLOW_A_10A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\TaskScheduler\ee6e65b18d7268d5cccbf3159b85d6c8\TaskScheduler.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\TaskScheduler\ee6e65b18d7268d5cccbf3159b85d6c8\TaskScheduler.ni.dll" />
+    <Allow ID="ID_ALLOW_A_10C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml.Linq\988711617a0df397efaaff1618e6c751\System.Xml.Linq.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml.Linq\988711617a0df397efaaff1618e6c751\System.Xml.Linq.ni.dll" />
+    <Allow ID="ID_ALLOW_A_10E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\7898f6e777383930e5e76fc058a9671a\System.Xml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\7898f6e777383930e5e76fc058a9671a\System.Xml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_110_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xaml\0f725eb82624879cdc49cde97f75bc3f\System.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xaml\0f725eb82624879cdc49cde97f75bc3f\System.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_112_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runteb92aa12#\e1f8543ba021d452b8b620b1750e8e13\System.Runtime.Serialization.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runteb92aa12#\e1f8543ba021d452b8b620b1750e8e13\System.Runtime.Serialization.ni.dll" />
+    <Allow ID="ID_ALLOW_A_114_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runtc259d85b#\e7f9c0cdc9ff5640f9daf7930d01d2e9\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runtc259d85b#\e7f9c0cdc9ff5640f9daf7930d01d2e9\System.Runtime.WindowsRuntime.UI.Xaml.ni.dll" />
+    <Allow ID="ID_ALLOW_A_116_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Net.Http\098ab127fd96c95d2e5258c0fa965a16\System.Net.Http.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Net.Http\098ab127fd96c95d2e5258c0fa965a16\System.Net.Http.ni.dll" />
+    <Allow ID="ID_ALLOW_A_118_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Management\d6b21b4e4f49b98b955d89d8d073ebc0\System.Management.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Management\d6b21b4e4f49b98b955d89d8d073ebc0\System.Management.ni.dll" />
+    <Allow ID="ID_ALLOW_A_11A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Core\98e1e8cab4a10a9028b5417d87ca1d51\System.Core.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Core\98e1e8cab4a10a9028b5417d87ca1d51\System.Core.ni.dll" />
+    <Allow ID="ID_ALLOW_A_11C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\f191daccb06325e80fb65876c7ec847f\System.Configuration.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\f191daccb06325e80fb65876c7ec847f\System.Configuration.ni.dll" />
+    <Allow ID="ID_ALLOW_A_11E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\SrpUxSnapIn\b8a6044a02b3966398c0bc8b65dbc629\SrpUxSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\SrpUxSnapIn\b8a6044a02b3966398c0bc8b65dbc629\SrpUxSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_120_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\SecurityAudf6921413#\9f71a7dbd7c57c4e78a63ea3b7b4818a\SecurityAuditPoliciesSnapIn.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\SecurityAudf6921413#\9f71a7dbd7c57c4e78a63ea3b7b4818a\SecurityAuditPoliciesSnapIn.ni.dll" />
+    <Allow ID="ID_ALLOW_A_122_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\PresentationCore\a4c01d2e2144846e05ace1a451781dce\PresentationCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\PresentationCore\a4c01d2e2144846e05ace1a451781dce\PresentationCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_124_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatioaec034ca#\f7a78d3b0fe885d28ff288fdd157cffc\PresentationFramework.Aero2.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatioaec034ca#\f7a78d3b0fe885d28ff288fdd157cffc\PresentationFramework.Aero2.ni.dll" />
+    <Allow ID="ID_ALLOW_A_126_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatio5ae0f00f#\d63bb278d1e02be7ee254a65edf90b97\PresentationFramework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatio5ae0f00f#\d63bb278d1e02be7ee254a65edf90b97\PresentationFramework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_128_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\napinit\2c4cc0a922eff15e72c25dd30d14f7a0\napinit.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\napinit\2c4cc0a922eff15e72c25dd30d14f7a0\napinit.ni.dll" />
+    <Allow ID="ID_ALLOW_A_12A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCFxCommon\ce24e5a97af984ccce1642f155e2e84b\MMCFxCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCFxCommon\ce24e5a97af984ccce1642f155e2e84b\MMCFxCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_12C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCEx\fbb401a0969cbc9ad55935a9660323b5\MMCEx.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\MMCEx\fbb401a0969cbc9ad55935a9660323b5\MMCEx.ni.dll" />
+    <Allow ID="ID_ALLOW_A_12E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wed3937f9#\14651868def07e443e1a3521ec658678\Microsoft.Windows.Diagnosis.SDCommon.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wed3937f9#\14651868def07e443e1a3521ec658678\Microsoft.Windows.Diagnosis.SDCommon.ni.dll" />
+    <Allow ID="ID_ALLOW_A_130_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.We9f24001#\530bf051381571e9216f8ed5a65a7c6e\Microsoft.WSMan.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.We9f24001#\530bf051381571e9216f8ed5a65a7c6e\Microsoft.WSMan.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_132_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wd518ee0d#\ed4d2ae754b3e6313c053c4ff93f38d5\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wd518ee0d#\ed4d2ae754b3e6313c053c4ff93f38d5\Microsoft.Windows.Diagnosis.Commands.UpdateDiagReport.ni.dll" />
+    <Allow ID="ID_ALLOW_A_134_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wcffedcb4#\45a7552c90dd166f8bf8da1f87c791b8\Microsoft.WindowsSearch.Commands.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wcffedcb4#\45a7552c90dd166f8bf8da1f87c791b8\Microsoft.WindowsSearch.Commands.ni.dll" />
+    <Allow ID="ID_ALLOW_A_136_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wad78daf4#\798743f03ab04ff55f4e46a38e340344\Microsoft.Windows.Diagnosis.SDHost.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Wad78daf4#\798743f03ab04ff55f4e46a38e340344\Microsoft.Windows.Diagnosis.SDHost.ni.dll" />
+    <Allow ID="ID_ALLOW_A_138_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W79a81d80#\5899c3982511dc8a34aaabf171212649\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W79a81d80#\5899c3982511dc8a34aaabf171212649\Microsoft.Windows.Diagnosis.Commands.WriteDiagTelemetry.ni.dll" />
+    <Allow ID="ID_ALLOW_A_13A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W708fc392#\18018f17241dff6108750fb4313a86d5\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W708fc392#\18018f17241dff6108750fb4313a86d5\Microsoft.Windows.Diagnosis.Commands.WriteDiagProgress.ni.dll" />
+    <Allow ID="ID_ALLOW_A_13C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W69ef49d2#\6879885109f7a07bbec4ddb9980f710d\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W69ef49d2#\6879885109f7a07bbec4ddb9980f710d\Microsoft.Windows.Diagnosis.Commands.GetDiagInput.ni.dll" />
+    <Allow ID="ID_ALLOW_A_13E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W3cdb5602#\6dd740b7431005d78f540c3dafc441ba\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W3cdb5602#\6dd740b7431005d78f540c3dafc441ba\Microsoft.Windows.Diagnosis.TroubleshootingPack.ni.dll" />
+    <Allow ID="ID_ALLOW_A_140_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W193497eb#\f67b0c8a5c5b49738ed1d68134c1ead0\Microsoft.WSMan.Runtime.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W193497eb#\f67b0c8a5c5b49738ed1d68134c1ead0\Microsoft.WSMan.Runtime.ni.dll" />
+    <Allow ID="ID_ALLOW_A_142_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W0bb5dac4#\96d3c105f7ed488c68159b0bc516dd56\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.W0bb5dac4#\96d3c105f7ed488c68159b0bc516dd56\Microsoft.Windows.Diagnosis.Commands.UpdateDiagRootcause.ni.dll" />
+    <Allow ID="ID_ALLOW_A_144_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sb6a1f1bc#\a2a3f1b2492900a345020e14240e442d\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sb6a1f1bc#\a2a3f1b2492900a345020e14240e442d\Microsoft.Security.ApplicationId.PolicyManagement.XmlHelper.ni.dll" />
+    <Allow ID="ID_ALLOW_A_146_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sa56e3556#\42dcce943ec120e499b959e791244a15\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Sa56e3556#\42dcce943ec120e499b959e791244a15\Microsoft.Security.ApplicationId.Wizards.AutomaticRuleGenerationWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_148_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S88747207#\c52953d5f9794b6a882e23486d1c3d8f\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S88747207#\c52953d5f9794b6a882e23486d1c3d8f\Microsoft.Security.ApplicationId.PolicyManagement.Cmdlets.ni.dll" />
+    <Allow ID="ID_ALLOW_A_14A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S54faafb0#\188d4bc8b95d710f0c89a075f4086d14\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S54faafb0#\188d4bc8b95d710f0c89a075f4086d14\Microsoft.Security.ApplicationId.PolicyManagement.PolicyManager.ni.dll" />
+    <Allow ID="ID_ALLOW_A_14C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S356e1ba0#\9beda0f1c6c07df0397427ad822b9e91\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S356e1ba0#\9beda0f1c6c07df0397427ad822b9e91\Microsoft.Security.ApplicationId.PolicyManagement.PolicyEngineApi.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_14E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S0f8e494c#\33215fc7a087ceee9ca36dede9af06cd\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.S0f8e494c#\33215fc7a087ceee9ca36dede9af06cd\Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.ni.dll" />
+    <Allow ID="ID_ALLOW_A_150_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Pefb7a36b#\206ebf0ba6ef30453b9724689c3a52c0\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Pefb7a36b#\206ebf0ba6ef30453b9724689c3a52c0\Microsoft.PowerShell.Workflow.ServiceCore.ni.dll" />
+    <Allow ID="ID_ALLOW_A_152_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P9de5a786#\f54e7688a7268ee0e071d9266443eead\Microsoft.PowerShell.Management.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P9de5a786#\f54e7688a7268ee0e071d9266443eead\Microsoft.PowerShell.Management.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_154_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P6f9a5e83#\71c97f18fe2c2277cdbaa1717b42e071\Microsoft.PowerShell.Security.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P6f9a5e83#\71c97f18fe2c2277cdbaa1717b42e071\Microsoft.PowerShell.Security.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_156_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P655586bb#\24138972a2d005f1725fbb81a26be719\Microsoft.PowerShell.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P655586bb#\24138972a2d005f1725fbb81a26be719\Microsoft.PowerShell.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_158_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P34f388c1#\e6ad4a26a88b5220847675549af2fe59\Microsoft.PowerShell.Diagnostics.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P34f388c1#\e6ad4a26a88b5220847675549af2fe59\Microsoft.PowerShell.Diagnostics.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_15A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P1706cafe#\932086c76b7579da854e25a122471a31\Microsoft.PowerShell.Commands.Diagnostics.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P1706cafe#\932086c76b7579da854e25a122471a31\Microsoft.PowerShell.Commands.Diagnostics.ni.dll" />
+    <Allow ID="ID_ALLOW_A_15C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P08ac43d5#\0ed8310dcc7f81a13e0bc83e12320c51\Microsoft.PowerShell.Utility.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P08ac43d5#\0ed8310dcc7f81a13e0bc83e12320c51\Microsoft.PowerShell.Utility.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_15E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P047767ce#\93c34e140aca87676746c79de0cdfb93\Microsoft.PowerShell.Core.Activities.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.P047767ce#\93c34e140aca87676746c79de0cdfb93\Microsoft.PowerShell.Core.Activities.ni.dll" />
+    <Allow ID="ID_ALLOW_A_160_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mff1be75b#\ad6b00f5280d100d47ae3c9fdf662997\Microsoft.ManagementConsole.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mff1be75b#\ad6b00f5280d100d47ae3c9fdf662997\Microsoft.ManagementConsole.ni.dll" />
+    <Allow ID="ID_ALLOW_A_162_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mf49f6405#\5da7d11202448a3d7d772888ee9bb993\Microsoft.Management.Infrastructure.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Mf49f6405#\5da7d11202448a3d7d772888ee9bb993\Microsoft.Management.Infrastructure.ni.dll" />
+    <Allow ID="ID_ALLOW_A_164_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ic1a2041b#\01d4c7829883b6173535f6c6b9121fdd\Microsoft.Isam.Esent.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ic1a2041b#\01d4c7829883b6173535f6c6b9121fdd\Microsoft.Isam.Esent.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_166_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.I0cd65b90#\bd7670366a90cd0eb7414cd9a28aab52\Microsoft.Isam.Esent.Interop.Wsa.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.I0cd65b90#\bd7670366a90cd0eb7414cd9a28aab52\Microsoft.Isam.Esent.Interop.Wsa.ni.dll" />
+    <Allow ID="ID_ALLOW_A_168_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ga41585c2#\fe3a3af5f87c003e640b830200af0ee4\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Ga41585c2#\fe3a3af5f87c003e640b830200af0ee4\Microsoft.GroupPolicy.AdmTmplEditor.ni.dll" />
+    <Allow ID="ID_ALLOW_A_16A_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.D0ff51f83#\f5bc5199d7f0de553e517108266532af\Microsoft.Dtc.PowerShell.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.D0ff51f83#\f5bc5199d7f0de553e517108266532af\Microsoft.Dtc.PowerShell.ni.dll" />
+    <Allow ID="ID_ALLOW_A_16C_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Abf69f55a#\f73834c7d4eb3cffd38c212f70a90b4f\Microsoft.ApplicationId.Framework.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.Abf69f55a#\f73834c7d4eb3cffd38c212f70a90b4f\Microsoft.ApplicationId.Framework.ni.dll" />
+    <Allow ID="ID_ALLOW_A_16E_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.A26c32abb#\009d35e0a06fc7944b98dd3008b16cb1\Microsoft.ApplicationId.RuleWizard.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\Microsoft.A26c32abb#\009d35e0a06fc7944b98dd3008b16cb1\Microsoft.ApplicationId.RuleWizard.ni.dll" />
+    <Allow ID="ID_ALLOW_A_170_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\EventViewer\1f5fe0fb04c28df710f6041d0479b7d8\EventViewer.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\EventViewer\1f5fe0fb04c28df710f6041d0479b7d8\EventViewer.ni.dll" />
+    <Allow ID="ID_ALLOW_A_172_0_0" FriendlyName="C:\Windows\assembly\NativeImages_v4.0.30319_32\AuditPolicy42d3d2cc#\07f1bb9a3acf8cec363c3391843701ab\AuditPolicyGPManagedStubs.Interop.ni.dll FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\NativeImages_v4.0.30319_32\AuditPolicy42d3d2cc#\07f1bb9a3acf8cec363c3391843701ab\AuditPolicyGPManagedStubs.Interop.ni.dll" />
+    <Allow ID="ID_ALLOW_A_173_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\meBoot.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\meBoot.min.js" />
+    <Allow ID="ID_ALLOW_A_174_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\offlineStrings.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\offlineStrings.js" />
+    <Allow ID="ID_ALLOW_A_175_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\offlineUtilities.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\offlineUtilities.js" />
+    <Allow ID="ID_ALLOW_A_176_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\webviewBoot.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\webviewBoot.min.js" />
+    <Allow ID="ID_ALLOW_A_177_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\webviewCore.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\webviewCore.min.js" />
+    <Allow ID="ID_ALLOW_A_178_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\offlineStrings.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\offlineStrings.js" />
+    <Allow ID="ID_ALLOW_A_179_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\offlineUtilities.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\offlineUtilities.js" />
+    <Allow ID="ID_ALLOW_A_17A_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\webviewBoot.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\webviewBoot.min.js" />
+    <Allow ID="ID_ALLOW_A_17B_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\en-US\meBoot.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\en-US\meBoot.min.js" />
+    <Allow ID="ID_ALLOW_A_17C_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\en-US\webviewCore.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.WindowsStore_11905.1001.4.0_x64__8wekyb3d8bbwe\Microsoft.Membership.MeControl\Assets\OfflinePages\Scripts\Me\MeControl\offline\en-US\webviewCore.min.js" />
+    <Allow ID="ID_ALLOW_A_17D_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Wallet_2.4.18324.0_x64__8wekyb3d8bbwe\js\startup.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Wallet_2.4.18324.0_x64__8wekyb3d8bbwe\js\startup.js" />
+    <Allow ID="ID_ALLOW_A_17E_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Wallet_2.4.18324.0_x64__8wekyb3d8bbwe\js\url-polyfill.min.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Wallet_2.4.18324.0_x64__8wekyb3d8bbwe\js\url-polyfill.min.js" />
+    <Allow ID="ID_ALLOW_A_17F_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\whatsnewsrc\script\bulletin_board_construction.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\whatsnewsrc\script\bulletin_board_construction.js" />
+    <Allow ID="ID_ALLOW_A_180_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\notificationsUI\notificationCenter.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\notificationsUI\notificationCenter.js" />
+    <Allow ID="ID_ALLOW_A_181_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\notetagsUI\main.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\notetagsUI\main.js" />
+    <Allow ID="ID_ALLOW_A_182_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jscripts\wefgallerywinrt.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jscripts\wefgallerywinrt.js" />
+    <Allow ID="ID_ALLOW_A_183_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jscripts\winrthost.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jscripts\winrthost.js" />
+    <Allow ID="ID_ALLOW_A_184_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\office.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\office.js" />
+    <Allow ID="ID_ALLOW_A_185_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\onenote-winrt-16.00.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\onenote-winrt-16.00.js" />
+    <Allow ID="ID_ALLOW_A_186_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\shared.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\shared.js" />
+    <Allow ID="ID_ALLOW_A_187_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\locallaunch\locallaunch.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\locallaunch\locallaunch.js" />
+    <Allow ID="ID_ALLOW_A_188_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\en-us\office_strings.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\jsaddins\en-us\office_strings.js" />
+    <Allow ID="ID_ALLOW_A_189_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\en-us\jscripts\wefgallery_strings.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\en-us\jscripts\wefgallery_strings.js" />
+    <Allow ID="ID_ALLOW_A_18A_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\en-us\jsaddins\onenote_strings.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\en-us\jsaddins\onenote_strings.js" />
+    <Allow ID="ID_ALLOW_A_18B_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\en-gb\jsaddins\onenote_strings.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\en-gb\jsaddins\onenote_strings.js" />
+    <Allow ID="ID_ALLOW_A_18C_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\accessibilitychecker\main.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.Office.OneNote_16001.11727.20076.0_x64__8wekyb3d8bbwe\accessibilitychecker\main.js" />
+    <Allow ID="ID_ALLOW_A_18D_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.4.6132.0_x64__8wekyb3d8bbwe\Microsoft.Advertising\bootstrap.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.4.6132.0_x64__8wekyb3d8bbwe\Microsoft.Advertising\bootstrap.js" />
+    <Allow ID="ID_ALLOW_A_18E_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.4.6132.0_x64__8wekyb3d8bbwe\Microsoft.Advertising\ormma.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.4.6132.0_x64__8wekyb3d8bbwe\Microsoft.Advertising\ormma.js" />
+    <Allow ID="ID_ALLOW_A_18F_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.4.6132.0_x64__8wekyb3d8bbwe\Microsoft.Advertising\vpaid.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.MicrosoftSolitaireCollection_4.4.6132.0_x64__8wekyb3d8bbwe\Microsoft.Advertising\vpaid.js" />
+    <Allow ID="ID_ALLOW_A_190_0_0" FriendlyName="C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.1903.1152.0_x64__8wekyb3d8bbwe\msapp-error.js FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.1903.1152.0_x64__8wekyb3d8bbwe\msapp-error.js" />
+    <Allow ID="ID_ALLOW_A_1_1_0" FriendlyName="C:\Program Files\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files\*" />
+    <Allow ID="ID_ALLOW_A_2_1_0" FriendlyName="C:\Program Files (x86)\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Program Files (x86)\*" />
+    <Allow ID="ID_ALLOW_A_3_1_0" FriendlyName="C:\Windows\assembly\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\assembly\*" />
+    <Allow ID="ID_ALLOW_A_4_1_0" FriendlyName="C:\Windows\boot\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Windows\boot\*" />
+    <Allow ID="ID_ALLOW_A_5_1_0" FriendlyName="C:\Intel\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Intel\*" />
+    <Allow ID="ID_ALLOW_A_6_1_0" FriendlyName="C:\HP\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\HP\*" />
+    <Allow ID="ID_ALLOW_A_7_1_0" FriendlyName="C:\Dell\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Dell\*" />
+    <Allow ID="ID_ALLOW_A_8_1_0" FriendlyName="C:\Acer\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Acer\*" />
+    <Allow ID="ID_ALLOW_A_9_1_0" FriendlyName="C:\Asus\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Asus\*" />
+    <Allow ID="ID_ALLOW_A_A_1_0" FriendlyName="C:\Lenovo\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Lenovo\*" />
+    <Allow ID="ID_ALLOW_A_B_1_0" FriendlyName="C:\Boot\* FileRule" MinimumFileVersion="0.0.0.0" FilePath="C:\Boot\*" />
+  </FileRules>
+  <!--Signers-->
+  <Signers>
+    <Signer ID="ID_SIGNER_S_30_0_0" Name="Microsoft Windows Production PCA 2011">
+      <CertRoot Type="TBS" Value="4E80BE107C860DE896384B3EFF50504DC2D76AC7151DF3102A4450637A032146" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1DC7_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1DC8_0_0" Name="Microsoft Code Signing PCA 2011">
+      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_38B9_0_0" Name="Microsoft Windows Third Party Component CA 2012">
+      <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_A182_0_0" Name="Microsoft Code Signing PCA 2010">
+      <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_15D4D_0_0" Name="Intel External Basic Policy CA">
+      <CertRoot Type="TBS" Value="53B052BA209C525233293274854B264BC0F68B73" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_17047_0_0" Name="Microsoft Windows Verification PCA">
+      <CertRoot Type="TBS" Value="265E5C02BDC19AA5394C2C3041FC2BD59774F918" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1CAA6_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="122F29FFE889713C1568EF7A0F663373C98570E8" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1DBBA_0_0" Name="Microsoft MarketPlace PCA 2011">
+      <CertRoot Type="TBS" Value="FC9EDE3DCCA09186B2D3BF9B738A2050CB1A554DA2DCADB55F3F72EE17721378" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1E2E1_0_0" Name="Microsoft Windows Phone Production PCA 2012">
+      <CertRoot Type="TBS" Value="A26156E95BF1EE57E8A410470C08525CDA7862DECBAA2629CACD57DAA5D6D6AD" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1_0_0" Name="Microsoft Windows Production PCA 2011">
+      <CertRoot Type="TBS" Value="4E80BE107C860DE896384B3EFF50504DC2D76AC7151DF3102A4450637A032146" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_19E_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_19F_0_0" Name="Microsoft Code Signing PCA 2011">
+      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_EEF_0_0" Name="Microsoft Windows Third Party Component CA 2013">
+      <CertRoot Type="TBS" Value="C55EE44C6DE86FA9AC3FC90F84EF0D4A6CAD5AAC6A112047C88B997E7547AED1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_24A6_0_0" Name="Microsoft Code Signing PCA 2010">
+      <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_2C90_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="7251ADC0F732CF409EE462E335BB99544F2DD40F" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_38BE_0_0" Name="Microsoft Windows Third Party Component CA 2012">
+      <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_4566_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="5095BF071B0D9976E40AE08412F4E1D241AFB58C" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_5D67_0_0" Name="Microsoft Windows Phone Production PCA 2012">
+      <CertRoot Type="TBS" Value="A26156E95BF1EE57E8A410470C08525CDA7862DECBAA2629CACD57DAA5D6D6AD" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_15D52_0_0" Name="Intel External Basic Policy CA">
+      <CertRoot Type="TBS" Value="53B052BA209C525233293274854B264BC0F68B73" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1704B_0_0" Name="Microsoft Windows Verification PCA">
+      <CertRoot Type="TBS" Value="265E5C02BDC19AA5394C2C3041FC2BD59774F918" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_18279_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="122F29FFE889713C1568EF7A0F663373C98570E8" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1CDB8_0_0" Name="Microsoft Windows PCA 2010">
+      <CertRoot Type="TBS" Value="90C9669670E75989159E6EEF69625EB6AD17CBA6209ED56F5665D55450A05212" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_1DBB8_0_0" Name="Microsoft MarketPlace PCA 2011">
+      <CertRoot Type="TBS" Value="FC9EDE3DCCA09186B2D3BF9B738A2050CB1A554DA2DCADB55F3F72EE17721378" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WINDOWS_PRODUCTION_1" Name="Microsoft Product Root 2010 Windows EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_WINDOWS" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ELAM_PRODUCTION_1" Name="Microsoft Product Root 2010 ELAM EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_ELAM" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HAL_PRODUCTION_1" Name="Microsoft Product Root 2010 HAL EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_HAL_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_SHA2_1" Name="Microsoft Product Root 2010 WHQL EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_SHA1_1" Name="Microsoft Product Root WHQL EKU SHA1">
+      <CertRoot Type="Wellknown" Value="05" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_MD5_1" Name="Microsoft Product Root WHQL EKU MD5">
+      <CertRoot Type="Wellknown" Value="04" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WINDOWS_FLIGHT_ROOT_1" Name="Microsoft Flighting Root 2014 Windows EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_WINDOWS" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ELAM_FLIGHT_1" Name="Microsoft Flighting Root 2014 ELAM EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_ELAM" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HAL_FLIGHT_1" Name="Microsoft Flighting Root 2014 HAL EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_HAL_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_FLIGHT_SHA2_1" Name="Microsoft Flighting Root 2014 WHQL EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_TEST2010_1" Name="MincryptKnownRootMicrosoftTestRoot2010">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WINDOWS_PRODUCTION_USER_1" Name="Microsoft Product Root 2010 Windows EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_WINDOWS" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ELAM_PRODUCTION_USER_1" Name="Microsoft Product Root 2010 ELAM EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_ELAM" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HAL_PRODUCTION_USER_1" Name="Microsoft Product Root 2010 HAL EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_HAL_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_SHA2_USER_1" Name="Microsoft Product Root 2010 WHQL EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_SHA1_USER_1" Name="Microsoft Product Root WHQL EKU SHA1">
+      <CertRoot Type="Wellknown" Value="05" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_MD5_USER_1" Name="Microsoft Product Root WHQL EKU MD5">
+      <CertRoot Type="Wellknown" Value="04" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WINDOWS_FLIGHT_ROOT_USER_1" Name="Microsoft Flighting Root 2014 Windows EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_WINDOWS" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ELAM_FLIGHT_USER_1" Name="Microsoft Flighting Root 2014 ELAM EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_ELAM" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HAL_FLIGHT_USER_1" Name="Microsoft Flighting Root 2014 HAL EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_HAL_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_WHQL_FLIGHT_SHA2_USER_1" Name="Microsoft Flighting Root 2014 WHQL EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_WHQL" />
+    </Signer>
+    <Signer ID="ID_SIGNER_STORE_1" Name="Microsoft MarketPlace PCA 2011">
+      <CertRoot Type="TBS" Value="FC9EDE3DCCA09186B2D3BF9B738A2050CB1A554DA2DCADB55F3F72EE17721378" />
+      <CertEKU ID="ID_EKU_STORE" />
+    </Signer>
+    <Signer ID="ID_SIGNER_RT_PRODUCTION_1" Name="Microsoft Product Root 2010 RT EKU">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_RT_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_DRM_1" Name="MincryptKnownRootMicrosoftDMDRoot2005">
+      <CertRoot Type="Wellknown" Value="0C" />
+    </Signer>
+    <Signer ID="ID_SIGNER_DCODEGEN_1" Name="MincryptKnownRootMicrosoftProductRoot2010">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_DCODEGEN" />
+    </Signer>
+    <Signer ID="ID_SIGNER_AM_1" Name="MincryptKnownRootMicrosoftStandardRoot2011">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_AM" />
+    </Signer>
+    <Signer ID="ID_SIGNER_RT_FLIGHT_1" Name="Microsoft Flighting Root 2014 RT EKU">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_RT_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_RT_STANDARD_1" Name="Microsoft Standard Root 2001 RT EUK">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_RT_EXT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_TEST2010_USER_1" Name="MincryptKnownRootMicrosoftTestRoot2010">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+  </Signers>
+  <!--Driver Signing Scenarios-->
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Auto generated policy on 07-14-2019">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_30_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1DC7_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1DC8_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_38B9_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_A182_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_15D4D_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_17047_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1CAA6_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1DBBA_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1E2E1_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_WINDOWS_PRODUCTION_1" />
+          <AllowedSigner SignerId="ID_SIGNER_ELAM_PRODUCTION_1" />
+          <AllowedSigner SignerId="ID_SIGNER_HAL_PRODUCTION_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_SHA2_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_SHA1_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_MD5_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WINDOWS_FLIGHT_ROOT_1" />
+          <AllowedSigner SignerId="ID_SIGNER_ELAM_FLIGHT_1" />
+          <AllowedSigner SignerId="ID_SIGNER_HAL_FLIGHT_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_FLIGHT_SHA2_1" />
+          <AllowedSigner SignerId="ID_SIGNER_TEST2010_1" />
+        </AllowedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_41_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_43_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_45_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_47_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_49_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_51_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_53_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_55_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_57_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_59_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_61_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_63_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_65_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_67_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_69_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_71_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_73_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_75_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_77_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_79_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_81_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_83_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_85_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_87_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_89_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_91_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_93_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_95_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_97_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_99_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_AB_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_AD_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_AF_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_BB_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_BD_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_BF_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_CB_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_CD_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_CF_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_DB_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_DD_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_DF_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_EB_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_ED_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_EF_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F7_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_FB_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_FD_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_FF_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_101_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_103_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_105_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_107_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_109_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_111_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_113_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_115_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_117_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_119_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_121_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_123_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_125_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_127_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_129_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_131_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_133_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_135_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_137_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_139_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_141_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_143_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_145_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_147_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_149_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_151_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_153_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_155_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_157_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_159_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_161_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_163_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_165_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_167_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_169_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_171_0_0" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="Auto generated policy on 07-14-2019">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_1_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_19E_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_19F_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_EEF_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_24A6_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_2C90_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_38BE_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_4566_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_5D67_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_15D52_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1704B_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_18279_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1CDB8_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_1DBB8_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_WINDOWS_PRODUCTION_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_ELAM_PRODUCTION_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_HAL_PRODUCTION_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_SHA2_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_SHA1_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_MD5_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WINDOWS_FLIGHT_ROOT_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_ELAM_FLIGHT_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_HAL_FLIGHT_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_WHQL_FLIGHT_SHA2_USER_1" />
+          <AllowedSigner SignerId="ID_SIGNER_STORE_1" />
+          <AllowedSigner SignerId="ID_SIGNER_RT_PRODUCTION_1" />
+          <AllowedSigner SignerId="ID_SIGNER_DRM_1" />
+          <AllowedSigner SignerId="ID_SIGNER_DCODEGEN_1" />
+          <AllowedSigner SignerId="ID_SIGNER_AM_1" />
+          <AllowedSigner SignerId="ID_SIGNER_RT_FLIGHT_1" />
+          <AllowedSigner SignerId="ID_SIGNER_RT_STANDARD_1" />
+          <AllowedSigner SignerId="ID_SIGNER_TEST2010_USER_1" />
+        </AllowedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_1_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_19_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_20_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_21_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_22_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_23_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_24_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_25_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_26_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_27_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_28_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_29_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_30_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_31_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_32_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_33_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_34_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_35_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_36_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_37_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_38_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_39_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_40_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_42_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_44_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_46_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_48_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_50_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_52_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_54_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_56_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_58_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_60_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_62_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_64_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_66_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_68_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_70_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_72_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_74_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_76_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_78_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_80_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_82_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_84_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_86_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_88_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_90_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_92_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_94_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_96_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_98_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_AA_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_AC_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_AE_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_BA_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_BC_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_BE_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_C8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_CA_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_CC_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_CE_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_D8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_DA_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_DC_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_DE_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_E8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_EA_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_EC_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_EE_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F2_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F4_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F6_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_F8_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_FA_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_FC_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_FE_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_100_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_102_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_104_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_106_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_108_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_10E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_110_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_112_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_114_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_116_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_118_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_11E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_120_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_122_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_124_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_126_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_128_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_12E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_130_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_132_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_134_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_136_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_138_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_13E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_140_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_142_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_144_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_146_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_148_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_14E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_150_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_152_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_154_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_156_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_158_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_15E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_160_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_162_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_164_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_166_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_168_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_16E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_170_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_172_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_173_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_174_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_175_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_176_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_177_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_178_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_179_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_17F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_180_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_181_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_182_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_183_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_184_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_185_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_186_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_187_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_188_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_189_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18A_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18B_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18C_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18D_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18E_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_18F_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_190_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_1_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_2_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_3_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_4_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_5_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_6_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_7_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_8_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_9_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_A_1_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_B_1_0" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_S_1_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_19E_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_19F_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_EEF_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_24A6_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_2C90_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_38BE_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_4566_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_5D67_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_15D52_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_1704B_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_18279_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_1CDB8_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_1DBB8_0_0" />
+    <CiSigner SignerId="ID_SIGNER_STORE_1" />
+  </CiSigners>
+  <HvciOptions>0</HvciOptions>
+  <BasePolicyID>{A5C89FE7-C0F8-492A-A1DC-240F472AB1B6}</BasePolicyID>
+  <PolicyID>{A5C89FE7-C0F8-492A-A1DC-240F472AB1B6}</PolicyID>
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>CorePolicyAuditMode</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>000001</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>
