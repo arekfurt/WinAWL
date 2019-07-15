@@ -1,4 +1,4 @@
-# Windows Application Whitelisting Notes and Sample Policies
+# Windows Application Whitelisting/Application Control Notes and Sample Policies
 
 This repository contains (or, rather, as of this writing will contain) sample policies and some assorted notes related to some research into various capabilities of Windows Defender Application Control and AppLocker.  Posting of any sample rulesets or policies here is meant to encourage, and perhaps make a bit easier, the work of those looking at implementing those technologies in their environments, and indicates that I've at least done some testing with them in my own lab environments and/or on my own personal devices. But I can make no assurance that anything here will work in your environments or on your equipment. And by "work" I mean "will not prevent your computer from booting or cause an important application to fail to run properly".
 
