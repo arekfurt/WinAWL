@@ -2,6 +2,11 @@
 
 # Deployability-Focused Windows Defender Application Control Starter Policies for Testing and Refinement
 
+## IMPORTANT NOTE (07/23):
+Unfortunately, based on my own testing I cannot at this time recommend beginning to deploy *to production machines* WDAC policies that use the new capabilties available in Win10 1903, with the exception of pre-1903 compliant policies that (1) just use the newly working "Disable:Script Enforcement" option or (2) have Script Enforcment enabled but are known not to cause conflicts in your environments due to testing on previous versions of Windows 10. (But see Bug Note #2 below.) This caution does include within it any of the starter policies currently posted in this section of this repository. (Which are currently "beta" quality at most anyway.) This is due to certain WDAC bugs listed below, as well as some concerns I'll be intentionally vague about for now. However, I'm sure Microsoft is working to address the issues that exist, and I would encourage continued work developing and testing Win10 1903 WDAC policies with the intention of rolling them out for use in the near-ish future. (Notably, if you're a larger organization that has recently begun to evaluate Windows 10 1903 itself for eventual deployment many months/years down the road I'd expect you can basically ignore this.)    
+
+_________________________________________________________________________________________________
+
 Windows 10 1903 introduces several capabilities that offer the promise of (hopefully) significantly lightening the burdens of deploying and maintaining application whitelisting/application control without sacrificing too much security robustness. The starter policies offered here are designed to both provide some functioning examples of how some of these new capabilities--such as multiple policy support, the ability to create filepath allow rules for locations that are admin-write-only, and the ability to choose whether Constrained Language Mode will or will not be on--may be used. And also to provide some practical policies that can give those interested in getting started with WDAC policy auditing and customization for their environments a bit of a head start, in terms of lessening the overall amount of refinement work they'll need to put in to eventually get to policies that are really usable. (For detection in audit mode, or detection and blocking in enforced mode).
 
 Currently, four policy set combinations are here, with audit and enforced policies available for each. For each of these eight overall policy set options there are two .cip policy files (one main policy and one block list policy) for each:
@@ -13,7 +18,6 @@ Currently, four policy set combinations are here, with audit and enforced polici
 
 Each policy also is accompanied by the .xml file that was compiled to create it.
 
-**Important Note:** MS has confirmed that a bug exists that causes serious deauthorization issues of vital Windows components if you attempt to merge certain allow rule lists and certain deny rule lists. The rules used in these policies trigger this bug. **Until further notice, DO NOT MERGE THE MAIN AND BLOCK LIST POLICY FILES HERE.** Just use the two separate policies included for each policy combo.
 
 Another note: Any intended use of any such policies presumes ordinary users without security expertise do not have administrative rights. Users with administrative rights may run any files as they choose from filepath locations allowed in these policies.
 
@@ -25,6 +29,10 @@ In terms of which starter policy set is "best", there's clearly not one always-r
 The core rules included in the policies here will most certainly evolve as I have time to further study and experiment with both enhancements to what they allow and to malicious behaviors they can block. (If you’re interested, keep an eye on the brand new dev branch to see what may be coming here.)   
 
 Note: Any intended use of any such policies presumes ordinary users without security expertise do not have administrative rights. Users with administrative rights may run any files as they choose from filepath locations allowed in these policies.
+
+**Bug Note:** MS has confirmed that a bug exists that causes serious deauthorization issues of vital Windows components if you attempt to merge certain allow rule lists and certain deny rule lists. The rules used in these policies trigger this bug. **Until further notice, DO NOT MERGE THE MAIN AND BLOCK LIST POLICY FILES HERE.** Just use the two separate policies included for each policy combo.
+
+**Bug Note 2:** Currently (as of 7/23) when Script Enforcement is enabled not all things that would trigger it (if you're in audit mode) or do get blocked by it (if you're in enforced mode) are written to the AppLocker/MSI and Scripts log as they should be. This includes at least some blocking of scripts in .hta files (assuming you don't have mshta.exe blocked as an application), possibly some Powershell commands, and some wmic.exe and regsvr.exe commands that could sometimes be used to bypass pre-1903 versions of WDAC. 
 
 ## July 15 Improvements
 
